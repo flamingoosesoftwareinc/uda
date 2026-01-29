@@ -1,5 +1,5 @@
 /*
-Copyright © 2026 Flamingoose Software Inc
+Copyright © 2026 Flamingoose Software Inc <eng@flamingoose.ca>
 */
 package main
 
