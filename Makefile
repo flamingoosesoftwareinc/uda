@@ -20,7 +20,7 @@ uda: ## Build the uda CLI binary
 	$(info $(_bullet) Building <uda>)
 	@cd $(GO_SRC_DIR) && \
 	CGO_ENABLED=$(CGO_ENABLED) CGO_LDFLAGS=$(CGO_LDFLAGS) \
-	go build -o ../bin/uda ./cmd/uda
+	go build -o ./bin/uda
 
 pr-ready: tidy-go generate format build lint test git-dirty ## Run comprehensive pre-commit checks
 
