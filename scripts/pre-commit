@@ -1,0 +1,37 @@
+#!/bin/sh
+# Pre-commit hook that verifies tests were run on the staged changes
+# Run `make verify` before committing to validate and record the tree SHA
+
+set -e
+
+VERIFIED_TREE_FILE=".git/verified-tree"
+
+# Get the tree SHA of the current staged changes
+CURRENT_TREE=$(git write-tree)
+
+# Check if we have a verified tree SHA
+if [ ! -f "$VERIFIED_TREE_FILE" ]; then
+    echo "ERROR: No verified tree found."
+    echo ""
+    echo "You must run 'make verify' before committing to ensure tests pass."
+    echo "This validates your staged changes and records them as verified."
+    echo ""
+    echo "Run: make verify"
+    exit 1
+fi
+
+VERIFIED_TREE=$(cat "$VERIFIED_TREE_FILE")
+
+if [ "$CURRENT_TREE" != "$VERIFIED_TREE" ]; then
+    echo "ERROR: Staged changes have changed since last verification."
+    echo ""
+    echo "Current tree:  $CURRENT_TREE"
+    echo "Verified tree: $VERIFIED_TREE"
+    echo ""
+    echo "You must run 'make verify' again before committing."
+    echo ""
+    echo "Run: make verify"
+    exit 1
+fi
+
+echo "Verified: staged changes match tested tree ($CURRENT_TREE)"

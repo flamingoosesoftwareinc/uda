@@ -1,0 +1,48 @@
+# Refer to golangci-lint's example config file for more options and information:
+# https://github.com/golangci/golangci-lint/blob/master/.golangci.reference.yml
+
+version: "2"
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+
+  linters:
+   default: all
+   enable:
+     - wsl_v5
+   disable:
+     - wsl
+     - depguard
+     - paralleltest # not all tests can run in parallel
+     - noinlineerr
+     - exhaustruct
+  linters-settings:
+    gosec:
+      exclude:
+        - G301  # Directory permissions - needed for config files
+        - G306  # File permissions - needed for config files
+  settings:
+    unused:
+      exported-fields-are-used: false
+    forbidigo:
+      forbid:
+        - pattern: slog\.(Info|Debug|Warn|Error|InfoContext|DebugContext|WarnContext|ErrorContext)
+          msg: "Use instance logger instead of direct slog package functions"
+        - pattern: log\..*
+          msg: "Use slog"
+    wsl_v5:
+      allow-first-in-block: true
+      allow-whole-block: false
+      branch-max-lines: 2
+
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+    - golines
+
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
