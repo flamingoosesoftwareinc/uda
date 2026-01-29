@@ -6,6 +6,7 @@ package cmd
 import (
 	"context"
 	"fmt"
+	"log/slog"
 	"os"
 
 	"github.com/charmbracelet/fang"
@@ -42,6 +43,8 @@ func Execute() {
 
 func init() {
 	cobra.OnInitialize(initConfig)
+
+	slog.SetLogLoggerLevel(slog.LevelDebug)
 
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,

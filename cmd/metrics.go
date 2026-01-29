@@ -5,8 +5,10 @@ package cmd
 
 import (
 	"fmt"
+	"log/slog"
 	"os"
 
+	"github.com/flamingoosesoftwareinc/uda/internal/detect"
 	"github.com/flamingoosesoftwareinc/uda/internal/files"
 	"github.com/spf13/cobra"
 )
@@ -30,13 +32,19 @@ to quickly create a Cobra application.`,
 			path = args[0]
 		}
 
-		fileList, err := files.ListFiles(ctx, os.DirFS(path), files.SkipHidden())
+		dirFS := os.DirFS(path)
+		fileList, err := files.ListFiles(ctx, dirFS, files.SkipHidden())
 		if err != nil {
 			return err
 		}
 
 		for _, file := range fileList {
-			fmt.Println(file)
+			lang, err := detect.Detect(ctx, dirFS, file)
+			if err != nil {
+				slog.ErrorContext(ctx, "error detecting language", "path", file, "error", err)
+			}
+
+			fmt.Println(file, lang)
 		}
 
 		return nil
