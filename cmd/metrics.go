@@ -51,31 +51,53 @@ to quickly create a Cobra application.`,
 
 			fmt.Println(file, lang)
 
-			_, err = parsers.LoadParser(lang)
-			if err != nil && errors.Is(err, ts.ErrLangNotSupported) {
-				slog.WarnContext(
-					ctx,
-					"language not supported",
-					"lang",
-					lang,
-					"path",
-					path,
-					"error",
-					err,
-				)
-			} else if err != nil {
-				slog.WarnContext(
-					ctx,
-					"error loading parser",
-					"lang",
-					lang,
-					"path",
-					path,
-					"error",
-					err,
-				)
+			parser, err := parsers.LoadParser(lang)
+			if err != nil {
+				switch {
+				case errors.Is(err, ts.ErrLangNotSupported):
+					slog.WarnContext(
+						ctx,
+						"language not supported",
+						"lang",
+						lang,
+						"path",
+						path,
+						"error",
+						err,
+					)
+				default:
+					slog.WarnContext(
+						ctx,
+						"error loading parser",
+						"lang",
+						lang,
+						"path",
+						path,
+						"error",
+						err,
+					)
+
+				}
+				continue
 			}
 
+			tree, content, err := parser.ParseCtx(ctx, dirFS, file)
+			if err != nil {
+				slog.WarnContext(
+					ctx,
+					"error parsing",
+					"lang",
+					lang,
+					"path",
+					path,
+					"error",
+					err,
+				)
+				continue
+			}
+			if _, _, err := parser.Query(tree, content); err != nil {
+				slog.WarnContext(ctx, "error querying", "lang", lang, "path", path, "error", err)
+			}
 		}
 
 		return nil
