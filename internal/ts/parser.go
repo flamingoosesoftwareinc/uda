@@ -1,7 +1,9 @@
 package ts
 
 import (
-	"errors"
+	"context"
+	"io"
+	"io/fs"
 	"log/slog"
 	"strings"
 	"sync"
@@ -14,38 +16,65 @@ import (
 	tstypescript "github.com/tree-sitter/tree-sitter-typescript/bindings/go"
 )
 
-type LanguageID string
-
-const (
-	GO     LanguageID = "go"
-	JS     LanguageID = "javascript"
-	JSX    LanguageID = "jsx"
-	PYTHON LanguageID = "python"
-	RUST   LanguageID = "rust"
-	TS                = "typescript"
-	TSX               = "tsx"
-)
-
-var langs = map[LanguageID]struct{}{
-	GO:     {},
-	JS:     {},
-	JSX:    {},
-	PYTHON: {},
-	RUST:   {},
-	TS:     {},
-	TSX:    {},
-}
-
-func isLangSupported(lang LanguageID) bool {
-	_, ok := langs[lang]
-	return ok
-}
-
-var ErrLangNotSupported = errors.New("language not supported")
-
 type parser struct {
 	sync.Mutex
-	parser *treesitter.Parser
+	query    string
+	language *treesitter.Language
+	parser   *treesitter.Parser
+}
+
+func (p *parser) ParseCtx(ctx context.Context, dirFS fs.FS, path string) (*treesitter.Tree, error) {
+	p.Lock()
+	defer p.Unlock()
+
+	f, err := dirFS.Open(path)
+	if err != nil {
+		return nil, err
+	}
+
+	text, err := io.ReadAll(f)
+	if err != nil {
+		return nil, err
+	}
+
+	length := len(text)
+	return p.parser.ParseWithOptions(
+		func(i int, _ treesitter.Point) []byte {
+			if i < length {
+				return text[i:]
+			}
+			return []byte{}
+		},
+		nil,
+		&treesitter.ParseOptions{
+			ProgressCallback: func(_ treesitter.ParseState) bool {
+				select {
+				case <-ctx.Done():
+					return true
+				default:
+					return false
+				}
+			},
+		},
+	), nil
+}
+
+func (p *parser) Query(
+	tree *treesitter.Tree,
+	content []byte,
+) (*treesitter.Query, *treesitter.QueryCursor, error) {
+	p.Lock()
+	defer p.Unlock()
+
+	q, err := treesitter.NewQuery(p.language, p.query)
+	if err != nil {
+		return nil, nil, err
+	}
+
+	qc := treesitter.NewQueryCursor()
+	// qc.Matches(q, tree.RootNode(), content)
+
+	return q, qc, nil
 }
 
 func (p *parser) Close() {
@@ -136,7 +165,8 @@ func (p *parsers) goParserFunc() (*parser, error) {
 	var err error
 	p.golang.Do(func() {
 		prsr := treesitter.NewParser()
-		lerr := prsr.SetLanguage(treesitter.NewLanguage(tsgo.Language()))
+		lang := treesitter.NewLanguage(tsgo.Language())
+		lerr := prsr.SetLanguage(lang)
 		err = lerr
 		if err != nil {
 			return
@@ -152,8 +182,8 @@ func (p *parsers) jsParserFunc() (*parser, error) {
 	var err error
 	p.js.Do(func() {
 		prsr := treesitter.NewParser()
-
-		lerr := prsr.SetLanguage(treesitter.NewLanguage(tsjavascript.Language()))
+		lang := treesitter.NewLanguage(tsjavascript.Language())
+		lerr := prsr.SetLanguage(lang)
 		err = lerr
 		if err != nil {
 			return
@@ -169,8 +199,8 @@ func (p *parsers) jsxParserFunc() (*parser, error) {
 	var err error
 	p.jsx.Do(func() {
 		prsr := treesitter.NewParser()
-
-		lerr := prsr.SetLanguage(treesitter.NewLanguage(tsjavascript.Language()))
+		lang := treesitter.NewLanguage(tsjavascript.Language())
+		lerr := prsr.SetLanguage(lang)
 		err = lerr
 		if err != nil {
 			return
@@ -186,8 +216,8 @@ func (p *parsers) pyParserFunc() (*parser, error) {
 	var err error
 	p.py.Do(func() {
 		prsr := treesitter.NewParser()
-
-		lerr := prsr.SetLanguage(treesitter.NewLanguage(tspython.Language()))
+		lang := treesitter.NewLanguage(tspython.Language())
+		lerr := prsr.SetLanguage(lang)
 		err = lerr
 		if err != nil {
 			return
@@ -203,8 +233,8 @@ func (p *parsers) rsParserFunc() (*parser, error) {
 	var err error
 	p.rs.Do(func() {
 		prsr := treesitter.NewParser()
-
-		lerr := prsr.SetLanguage(treesitter.NewLanguage(tsrust.Language()))
+		lang := treesitter.NewLanguage(tsrust.Language())
+		lerr := prsr.SetLanguage(lang)
 		err = lerr
 		if err != nil {
 			return
@@ -220,8 +250,8 @@ func (p *parsers) tsParserFunc() (*parser, error) {
 	var err error
 	p.ts.Do(func() {
 		prsr := treesitter.NewParser()
-
-		lerr := prsr.SetLanguage(treesitter.NewLanguage(tstypescript.LanguageTypescript()))
+		lang := treesitter.NewLanguage(tstypescript.LanguageTypescript())
+		lerr := prsr.SetLanguage(lang)
 		err = lerr
 		if err != nil {
 			return
@@ -237,8 +267,8 @@ func (p *parsers) tsxParserFunc() (*parser, error) {
 	var err error
 	p.tsx.Do(func() {
 		prsr := treesitter.NewParser()
-
-		lerr := prsr.SetLanguage(treesitter.NewLanguage(tstypescript.LanguageTSX()))
+		lang := treesitter.NewLanguage(tstypescript.LanguageTSX())
+		lerr := prsr.SetLanguage(lang)
 		err = lerr
 		if err != nil {
 			return
