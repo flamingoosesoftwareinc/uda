@@ -3,8 +3,8 @@
 # Build configuration
 GO_SRC_DIR ?= .
 GOLANGCILINT_CONFIG_PATH ?= $(PWD)/.golangci.yml
-CGO_ENABLED = 0
-CGO_LDFLAGS = ""
+CGO_ENABLED = 1
+CGO_LDFLAGS = "-ldl"
 
 # Include modular makefiles (following template pattern)
 include makefiles/shared.mk

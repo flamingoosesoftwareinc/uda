@@ -4,12 +4,14 @@ Copyright © 2026 Flamingoose Software Inc <eng@flamingoose.ca>
 package cmd
 
 import (
+	"errors"
 	"fmt"
 	"log/slog"
 	"os"
 
 	"github.com/flamingoosesoftwareinc/uda/internal/detect"
 	"github.com/flamingoosesoftwareinc/uda/internal/files"
+	"github.com/flamingoosesoftwareinc/uda/internal/ts"
 	"github.com/spf13/cobra"
 )
 
@@ -38,6 +40,9 @@ to quickly create a Cobra application.`,
 			return err
 		}
 
+		parsers := ts.Parsers()
+		defer parsers.Close()
+
 		for _, file := range fileList {
 			lang, err := detect.Detect(ctx, dirFS, file)
 			if err != nil {
@@ -45,6 +50,32 @@ to quickly create a Cobra application.`,
 			}
 
 			fmt.Println(file, lang)
+
+			_, err = parsers.LoadParser(lang)
+			if err != nil && errors.Is(err, ts.ErrLangNotSupported) {
+				slog.WarnContext(
+					ctx,
+					"language not supported",
+					"lang",
+					lang,
+					"path",
+					path,
+					"error",
+					err,
+				)
+			} else if err != nil {
+				slog.WarnContext(
+					ctx,
+					"error loading parser",
+					"lang",
+					lang,
+					"path",
+					path,
+					"error",
+					err,
+				)
+			}
+
 		}
 
 		return nil
