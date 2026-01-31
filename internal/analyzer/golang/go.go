@@ -53,6 +53,12 @@ func (g *goAnalyzer) Analyze(ctx context.Context, dir fs.FS) (analyzer.PackageIm
 	// e.g. if module is github.com/ahmedalhulaibi/foo and package is "cli", dir is "go/internal/cli" and it imports "treesitter", "context", "io/fs", "github.com/asdfasdf/aoiso"
 	// then the result would be "github.com/ahmedalhulaibi/foo/go/internal/cli": []string{"treesitter", "context", "io/fs", "github.com/asdfasdf/aoiso"}
 
+	// TODO: count the number of imported types/functions and the number of exported types/functions
+	// wip query:
+	// (qualified_type (_ (package_identifier))) @package_type_use
+	// (selector_expression) @package_func_use
+	// need a query for capturing exported types
+
 	return analyzeGoFiles(ctx, dir, gomodPaths)
 }
 
