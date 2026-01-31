@@ -50,7 +50,7 @@ func TestListFiles(t *testing.T) {
 				},
 				"web/index.ts": {},
 			},
-			options: []FileFilter{SkipHidden()},
+			options: []FileFilter{SkipHiddenDirs()},
 			want: []string{
 				"go/main.go",
 				"web/index.ts",
@@ -75,7 +75,7 @@ func TestListFiles(t *testing.T) {
 				},
 				"web/index.ts": {},
 			},
-			options: []FileFilter{SkipHidden()},
+			options: []FileFilter{SkipHiddenDirs(), SkipHiddenFiles()},
 			want: []string{
 				"go/main.go",
 				"web/index.ts",

@@ -7,14 +7,14 @@ import (
 	"path/filepath"
 )
 
-type FileFilter func(path string) bool
+type FileFilter func(path string, d fs.DirEntry) bool
 
 func ListFiles(ctx context.Context, dirFS fs.FS, filters ...FileFilter) ([]string, error) {
 	files := []string{}
 
 	if err := fs.WalkDir(dirFS, ".", func(path string, d fs.DirEntry, err error) error {
 		if d.IsDir() {
-			shouldSkip := applyFilters(d.Name(), filters)
+			shouldSkip := applyFilters(d.Name(), d, filters)
 			if shouldSkip {
 				slog.DebugContext(ctx, "skipping directory", "name", d.Name())
 				return fs.SkipDir
@@ -22,7 +22,7 @@ func ListFiles(ctx context.Context, dirFS fs.FS, filters ...FileFilter) ([]strin
 			return nil
 		}
 
-		shouldIgnoreFile := applyFilters(path, filters)
+		shouldIgnoreFile := applyFilters(path, d, filters)
 		if shouldIgnoreFile {
 			slog.DebugContext(ctx, "skipping file", "path", path)
 			return nil
@@ -38,9 +38,9 @@ func ListFiles(ctx context.Context, dirFS fs.FS, filters ...FileFilter) ([]strin
 	return files, nil
 }
 
-func applyFilters(path string, filters []FileFilter) bool {
+func applyFilters(path string, d fs.DirEntry, filters []FileFilter) bool {
 	for _, filter := range filters {
-		if filter(path) {
+		if filter(path, d) {
 			return true
 		}
 	}
@@ -48,8 +48,23 @@ func applyFilters(path string, filters []FileFilter) bool {
 	return false
 }
 
-func SkipHidden() FileFilter {
-	return func(path string) bool {
+func SkipHiddenDirs() FileFilter {
+	return func(path string, d fs.DirEntry) bool {
+		if !d.IsDir() {
+			return false
+		}
+		base := filepath.Base(path)
+		isHidden, err := isHiddenFile(base)
+		if err != nil {
+			return true
+		}
+
+		return isHidden
+	}
+}
+
+func SkipHiddenFiles() FileFilter {
+	return func(path string, d fs.DirEntry) bool {
 		base := filepath.Base(path)
 		isHidden, err := isHiddenFile(base)
 		if err != nil {

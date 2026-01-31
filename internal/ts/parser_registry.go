@@ -97,8 +97,9 @@ func (p *parsers) goParserFunc() (*parser, error) {
 		}
 
 		query := `
-(package_clause (package_identifier)) @package
-(import_spec) @import
+(package_clause (package_identifier) @package) 
+(import_spec
+		path: (interpreted_string_literal)) @import
 		`
 
 		p.goParser = &parser{

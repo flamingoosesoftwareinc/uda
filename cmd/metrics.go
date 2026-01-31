@@ -4,14 +4,9 @@ Copyright © 2026 Flamingoose Software Inc <eng@flamingoose.ca>
 package cmd
 
 import (
-	"errors"
-	"fmt"
-	"log/slog"
 	"os"
 
-	"github.com/flamingoosesoftwareinc/uda/internal/detect"
-	"github.com/flamingoosesoftwareinc/uda/internal/files"
-	"github.com/flamingoosesoftwareinc/uda/internal/ts"
+	"github.com/flamingoosesoftwareinc/uda/internal/analyzer/golang"
 	"github.com/spf13/cobra"
 )
 
@@ -35,69 +30,10 @@ to quickly create a Cobra application.`,
 		}
 
 		dirFS := os.DirFS(path)
-		fileList, err := files.ListFiles(ctx, dirFS, files.SkipHidden())
+
+		_, err := golang.GoAnalyzer().Analyze(ctx, dirFS)
 		if err != nil {
 			return err
-		}
-
-		parsers := ts.Parsers()
-		defer parsers.Close()
-
-		for _, file := range fileList {
-			lang, err := detect.Detect(ctx, dirFS, file)
-			if err != nil {
-				slog.ErrorContext(ctx, "error detecting language", "path", file, "error", err)
-			}
-
-			fmt.Println(file, lang)
-
-			parser, err := parsers.LoadParser(lang)
-			if err != nil {
-				switch {
-				case errors.Is(err, ts.ErrLangNotSupported):
-					slog.WarnContext(
-						ctx,
-						"language not supported",
-						"lang",
-						lang,
-						"path",
-						path,
-						"error",
-						err,
-					)
-				default:
-					slog.WarnContext(
-						ctx,
-						"error loading parser",
-						"lang",
-						lang,
-						"path",
-						path,
-						"error",
-						err,
-					)
-
-				}
-				continue
-			}
-
-			tree, content, err := parser.ParseCtx(ctx, dirFS, file)
-			if err != nil {
-				slog.WarnContext(
-					ctx,
-					"error parsing",
-					"lang",
-					lang,
-					"path",
-					path,
-					"error",
-					err,
-				)
-				continue
-			}
-			if _, _, err := parser.Query(tree, content); err != nil {
-				slog.WarnContext(ctx, "error querying", "lang", lang, "path", path, "error", err)
-			}
 		}
 
 		return nil
