@@ -2,6 +2,7 @@ package golang_test
 
 import (
 	"context"
+	"log/slog"
 	"os"
 	"slices"
 	"testing"
@@ -28,6 +29,7 @@ func toSortedSlice(pi analyzer.PackageImports) []packageImports {
 }
 
 func TestGoAnalyze(t *testing.T) {
+	slog.SetLogLoggerLevel(slog.LevelDebug)
 	tests := map[string]struct {
 		dir  string
 		want analyzer.PackageImports
@@ -43,7 +45,7 @@ func TestGoAnalyze(t *testing.T) {
 		"simple_gomod": {
 			dir: "testdata/simple_gomod",
 			want: analyzer.PackageImports{
-				"example.com/main": []analyzer.Import{
+				"example.com/simple_gomod/main": []analyzer.Import{
 					`"fmt"`,
 				},
 			},
@@ -51,7 +53,7 @@ func TestGoAnalyze(t *testing.T) {
 		"project_gomod": {
 			dir: "testdata/project_gomod",
 			want: analyzer.PackageImports{
-				"example.com/main": []analyzer.Import{
+				"example.com/project_gomod/main": []analyzer.Import{
 					`"example.com/project_gomod/cmd"`,
 				},
 				"example.com/project_gomod/cmd": []analyzer.Import{
@@ -72,9 +74,11 @@ func TestGoAnalyze(t *testing.T) {
 		"project_goworkspace": {
 			dir: "testdata/project_goworkspace",
 			want: analyzer.PackageImports{
-				"example.com/main": []analyzer.Import{
+				"example.com/cowsay/main": []analyzer.Import{
 					`"fmt"`,
-					`"example.com/foobarbaz/internal/greet"`,
+					`"os"`,
+					`"example.com/cowsay/cmd"`,
+					`"example.com/cowsay/moo"`,
 				},
 				"example.com/foobarbaz/internal/greet": []analyzer.Import{
 					`"fmt"`,
@@ -85,6 +89,10 @@ func TestGoAnalyze(t *testing.T) {
 				},
 				"example.com/cowsay/moo": []analyzer.Import{
 					`"fmt"`,
+				},
+				"example.com/foobarbaz/main": []analyzer.Import{
+					`"fmt"`,
+					`"example.com/foobarbaz/internal/greet"`,
 				},
 			},
 		},

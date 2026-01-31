@@ -253,7 +253,12 @@ func processCaptures(
 			defaultPkgPath := string(pkgPathPrefix)
 
 			dir := filepath.Dir(defaultPkgPath)
-			pkgPath = analyzer.Package(filepath.Join(dir, detectedPkgName))
+			if detectedPkgName == filepath.Base(defaultPkgPath) {
+				pkgPath = analyzer.Package(filepath.Join(dir, detectedPkgName))
+			} else {
+				pkgPath = analyzer.Package(filepath.Join(defaultPkgPath, detectedPkgName))
+			}
+
 			slog.Debug(
 				"pkg names",
 				"detectedPkgName",
