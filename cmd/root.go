@@ -44,7 +44,7 @@ func Execute() {
 func init() {
 	cobra.OnInitialize(initConfig)
 
-	slog.SetLogLoggerLevel(slog.LevelDebug)
+	slog.SetLogLoggerLevel(slog.LevelError)
 
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
