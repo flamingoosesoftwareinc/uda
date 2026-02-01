@@ -4,6 +4,7 @@ Copyright © 2026 Flamingoose Software Inc <eng@flamingoose.ca>
 package cmd
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/flamingoosesoftwareinc/uda/internal/analyzer/golang"
@@ -31,9 +32,16 @@ to quickly create a Cobra application.`,
 
 		dirFS := os.DirFS(path)
 
-		_, err := golang.GoAnalyzer().Analyze(ctx, dirFS)
+		pi, err := golang.GoAnalyzer().Analyze(ctx, dirFS)
 		if err != nil {
 			return err
+		}
+
+		for p, i := range pi {
+			fmt.Printf("Package: %v imports\n", p)
+			for _, _i := range i {
+				fmt.Printf("\t%v\n", _i)
+			}
 		}
 
 		return nil

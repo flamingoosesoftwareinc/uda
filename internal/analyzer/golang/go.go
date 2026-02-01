@@ -2,6 +2,7 @@ package golang
 
 import (
 	"context"
+	"errors"
 	"io/fs"
 	"log/slog"
 	"path/filepath"
@@ -20,6 +21,10 @@ var _ analyzer.Analyzer = &goAnalyzer{}
 
 func GoAnalyzer() *goAnalyzer {
 	return &goAnalyzer{}
+}
+
+func (g *goAnalyzer) AnalyzeV2(ctx context.Context, dir fs.FS) ([]analyzer.Metrics, error) {
+	return nil, errors.ErrUnsupported
 }
 
 func (g *goAnalyzer) Analyze(ctx context.Context, dir fs.FS) (analyzer.PackageImports, error) {
@@ -166,8 +171,14 @@ func analyzeGoFiles(
 	query := `
 (package_clause (package_identifier) @package) 
 (import_spec
-		path: (interpreted_string_literal)) @import
-		`
+		path: (interpreted_string_literal) @import)
+(import_spec
+	  name: (package_identifier)
+	  path: (interpreted_string_literal)) @import_alias 
+(qualified_type 
+  package: (package_identifier)) @import_type_use
+(selector_expression) @import_func_use
+`
 
 	pi := make(analyzer.PackageImports)
 
@@ -192,14 +203,15 @@ func analyzeGoFiles(
 		imports := make([]analyzer.Import, 0, 32)
 
 		for match := matches.Next(); match != nil; match = matches.Next() {
-			pkgPath, imports = processCaptures(
+			c := processCaptures(
 				match,
 				captureNames,
 				pkgPath,
 				pkgPathPrefix,
 				text,
-				imports,
 			)
+			imports = append(imports, c.i...)
+			pkgPath = c.p
 		}
 		slog.DebugContext(
 			ctx,
@@ -241,21 +253,34 @@ func getPkgPathPrefix(goFilepath string, gomodPaths map[directory]modulePath) mo
 	return modulePath(gf)
 }
 
+type captures struct {
+	p                  analyzer.Package
+	i                  []analyzer.Import
+	aliases            []string
+	qualifiedTypesUsed []string
+	selectExpressions  []string
+}
+
 func processCaptures(
 	match *treesitter.QueryMatch,
 	captureNames []string,
 	pkgPath analyzer.Package,
 	pkgPathPrefix modulePath,
 	text []byte,
-	imports []analyzer.Import,
-) (analyzer.Package, []analyzer.Import) {
+) captures {
+	imports := make([]analyzer.Import, 0, 32)
+	aliases := make([]string, 0, 32)
+	qualifiedTypesUsed := make([]string, 0, 32)
+	selectExpressions := make([]string, 0, 32)
+
 	for _, capture := range match.Captures {
 		node := capture.Node
+		nodeStr := string(node.Utf8Text(text))
 		captureName := captureNames[capture.Index]
 
 		switch captureName {
 		case "package":
-			detectedPkgName := string(node.Utf8Text(text))
+			detectedPkgName := nodeStr
 			defaultPkgPath := string(pkgPathPrefix)
 
 			dir := filepath.Dir(defaultPkgPath)
@@ -275,8 +300,32 @@ func processCaptures(
 				pkgPath,
 			)
 		case "import":
-			imports = append(imports, analyzer.Import(node.Utf8Text(text)))
+			slog.Debug("import detected", "import", nodeStr)
+			imports = append(imports, analyzer.Import(nodeStr))
+		case "alias":
+			slog.Debug("alias detected", "alias", nodeStr)
+			aliases = append(aliases, nodeStr)
+		case "import_func_use":
+			slog.Debug("import_func_use detected", "expression", nodeStr)
+			selectExpressions = append(selectExpressions, nodeStr)
+		case "import_type_use":
+			slog.Debug("import_type_use detected", "expression", nodeStr)
+			qualifiedTypesUsed = append(qualifiedTypesUsed, nodeStr)
+		default:
+			slog.Debug(
+				"unknown capture name",
+				"captureName",
+				captureName,
+				"value",
+				string(node.Utf8Text(text)),
+			)
 		}
 	}
-	return pkgPath, imports
+	return captures{
+		p:                  pkgPath,
+		i:                  imports,
+		aliases:            aliases,
+		qualifiedTypesUsed: qualifiedTypesUsed,
+		selectExpressions:  selectExpressions,
+	}
 }

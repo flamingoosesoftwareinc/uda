@@ -35,7 +35,7 @@ func TestGoAnalyze(t *testing.T) {
 		want analyzer.PackageImports
 	}{
 		"simple_nomod": {
-			dir: "testdata/simple_nomod",
+			dir: ".testdata/simple_nomod",
 			want: analyzer.PackageImports{
 				"main": []analyzer.Import{
 					`"fmt"`,
@@ -43,7 +43,7 @@ func TestGoAnalyze(t *testing.T) {
 			},
 		},
 		"simple_gomod": {
-			dir: "testdata/simple_gomod",
+			dir: ".testdata/simple_gomod",
 			want: analyzer.PackageImports{
 				"example.com/simple_gomod/main": []analyzer.Import{
 					`"fmt"`,
@@ -51,7 +51,7 @@ func TestGoAnalyze(t *testing.T) {
 			},
 		},
 		"project_gomod": {
-			dir: "testdata/project_gomod",
+			dir: ".testdata/project_gomod",
 			want: analyzer.PackageImports{
 				"example.com/project_gomod/main": []analyzer.Import{
 					`"example.com/project_gomod/cmd"`,
@@ -72,7 +72,7 @@ func TestGoAnalyze(t *testing.T) {
 			},
 		},
 		"project_goworkspace": {
-			dir: "testdata/project_goworkspace",
+			dir: ".testdata/project_goworkspace",
 			want: analyzer.PackageImports{
 				"example.com/cowsay/main": []analyzer.Import{
 					`"fmt"`,

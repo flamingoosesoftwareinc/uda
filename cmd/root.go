@@ -29,6 +29,17 @@ to quickly create a Cobra application.`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
+	PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
+		logLevelString := viper.GetString("loglevel")
+		logLevel, ok := slogLevel[logLevelString]
+		if !ok {
+			slog.Error("invalid log-level, defaulting to error", "loglevel", logLevelString)
+			slog.SetLogLoggerLevel(slog.LevelError)
+		} else {
+			slog.SetLogLoggerLevel(logLevel)
+		}
+		return nil
+	},
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -41,11 +52,15 @@ func Execute() {
 	}
 }
 
+var slogLevel = map[string]slog.Level{
+	"info":  slog.LevelInfo,
+	"warn":  slog.LevelWarn,
+	"error": slog.LevelError,
+	"debug": slog.LevelDebug,
+}
+
 func init() {
 	cobra.OnInitialize(initConfig)
-
-	slog.SetLogLoggerLevel(slog.LevelError)
-
 	// Here you will define your flags and configuration settings.
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
@@ -53,6 +68,14 @@ func init() {
 	rootCmd.PersistentFlags().
 		StringVar(&cfgFile, "config", "", "config file (default is $HOME/.uda.yaml)")
 
+	rootCmd.PersistentFlags().
+		String("loglevel", "error", "logging level")
+	if err := viper.BindPFlag(
+		"loglevel",
+		rootCmd.PersistentFlags().Lookup("loglevel"),
+	); err != nil {
+		slog.Error("failed to bind", "error", err)
+	}
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
