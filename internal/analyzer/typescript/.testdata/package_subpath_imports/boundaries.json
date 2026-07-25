@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "@myorg/core",
+    "Dirs": [
+      "packages/core/src"
+    ]
+  },
+  {
+    "Name": "@myorg/ui",
+    "Dirs": [
+      "packages/ui/src",
+      "packages/ui/src/components"
+    ]
+  }
+]

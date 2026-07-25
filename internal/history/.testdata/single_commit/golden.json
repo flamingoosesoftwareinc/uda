@@ -1,0 +1,18 @@
+[
+  {
+    "message": "initial commit",
+    "metrics": [
+      {
+        "language": "Go",
+        "metrics": [
+          {
+            "package": "example.com/test/main",
+            "inward": 0,
+            "outward": 0,
+            "instability": 0
+          }
+        ]
+      }
+    ]
+  }
+]

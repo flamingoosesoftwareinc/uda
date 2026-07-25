@@ -1,0 +1,105 @@
+[
+  {
+    "package": "my-app/src",
+    "inward": {},
+    "outward": {
+      "my-app/src/services": {
+        "services.UserService": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/index.ts",
+              "line": 4,
+              "col_start": 17,
+              "col_end": 28
+            }
+          ]
+        }
+      },
+      "my-app/src/utils": {
+        "utils.formatDate": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/index.ts",
+              "line": 5,
+              "col_start": 11,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "my-app/src/models",
+    "inward": {
+      "my-app/src/services": {
+        "models.User": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/services/user-service.ts",
+              "line": 4,
+              "col_start": 14,
+              "col_end": 18
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "my-app/src/services",
+    "inward": {
+      "my-app/src": {
+        "services.UserService": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/index.ts",
+              "line": 4,
+              "col_start": 17,
+              "col_end": 28
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "my-app/src/models": {
+        "models.User": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/services/user-service.ts",
+              "line": 4,
+              "col_start": 14,
+              "col_end": 18
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "my-app/src/utils",
+    "inward": {
+      "my-app/src": {
+        "utils.formatDate": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/index.ts",
+              "line": 5,
+              "col_start": 11,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  }
+]

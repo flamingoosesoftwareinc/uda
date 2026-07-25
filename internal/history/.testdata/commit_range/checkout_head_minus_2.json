@@ -1,0 +1,10 @@
+[
+  {
+    "path": "go.mod",
+    "content": "module example.com/test\n\ngo 1.21\n"
+  },
+  {
+    "path": "main.go",
+    "content": "package main\n\nfunc main() {}\n"
+  }
+]

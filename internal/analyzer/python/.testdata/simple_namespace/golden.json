@@ -1,0 +1,40 @@
+[
+  {
+    "package": "myns.core",
+    "inward": {},
+    "outward": {
+      "myns.utils": {
+        "myns.utils": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "myns/core.py",
+              "line": 5,
+              "col_start": 12,
+              "col_end": 17
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "myns.utils",
+    "inward": {
+      "myns.core": {
+        "myns.utils": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "myns/core.py",
+              "line": 5,
+              "col_start": 12,
+              "col_end": 17
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  }
+]

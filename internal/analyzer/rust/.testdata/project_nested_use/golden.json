@@ -1,0 +1,164 @@
+[
+  {
+    "package": "nested_use_test",
+    "inward": {},
+    "outward": {
+      "nested_use_test::collections": {
+        "nested_use_test::collections::HashMap": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 12,
+              "col_start": 15,
+              "col_end": 22
+            },
+            {
+              "file": "src/main.rs",
+              "line": 12,
+              "col_start": 38,
+              "col_end": 50
+            }
+          ]
+        },
+        "nested_use_test::collections::HashSet": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 13,
+              "col_start": 15,
+              "col_end": 22
+            },
+            {
+              "file": "src/main.rs",
+              "line": 13,
+              "col_start": 33,
+              "col_end": 45
+            }
+          ]
+        }
+      },
+      "nested_use_test::collections::hash_map": {
+        "nested_use_test::collections::hash_map::Entry": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 15,
+              "col_start": 17,
+              "col_end": 22
+            }
+          ]
+        },
+        "nested_use_test::collections::hash_map::OccupiedEntry": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 16,
+              "col_start": 20,
+              "col_end": 33
+            }
+          ]
+        }
+      },
+      "nested_use_test::io": {
+        "nested_use_test::io::Read": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 18,
+              "col_start": 16,
+              "col_end": 20
+            }
+          ]
+        },
+        "nested_use_test::io::Write": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 19,
+              "col_start": 17,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "nested_use_test::collections",
+    "inward": {
+      "nested_use_test": {
+        "nested_use_test::collections::HashMap": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 12,
+              "col_start": 15,
+              "col_end": 22
+            },
+            {
+              "file": "src/main.rs",
+              "line": 12,
+              "col_start": 38,
+              "col_end": 50
+            }
+          ]
+        },
+        "nested_use_test::collections::HashSet": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 13,
+              "col_start": 15,
+              "col_end": 22
+            },
+            {
+              "file": "src/main.rs",
+              "line": 13,
+              "col_start": 33,
+              "col_end": 45
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "nested_use_test::io",
+    "inward": {
+      "nested_use_test": {
+        "nested_use_test::io::Read": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 18,
+              "col_start": 16,
+              "col_end": 20
+            }
+          ]
+        },
+        "nested_use_test::io::Write": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 19,
+              "col_start": 17,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  }
+]

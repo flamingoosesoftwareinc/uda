@@ -1,0 +1,15 @@
+Comparing abc1234 → def5678
+
+New packages:
+  internal/cache  inward 0  outward 1
+
+Removed packages:
+  internal/oldutil
+
+[1;97mSummary[m
+╭────────────────────┬─────────────┬────────┬─────────╮
+│      [1mPACKAGE[m       │ [1mINSTABILITY[m │ [1mINWARD[m │ [1mOUTWARD[m │
+├────────────────────┼─────────────┼────────┼─────────┤
+│ + internal/cache   │ 1.00        │ 0      │ 1       │
+│ - internal/oldutil │ (removed)   │        │         │
+╰────────────────────┴─────────────┴────────┴─────────╯

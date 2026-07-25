@@ -1,0 +1,23 @@
+[7m  [m[1;7mabc1234 → def5678[m[7m  [m
+[1;95minternal/core[m                                                                   
+[90m[m                                                                                
+[90mInward: 5 → 5  Outward: 2 → 4  Instability: 0.29 → 0.44[m                         
+[90m[m                                                                                
+[1;96mNew Dependencies[m                                                                
+[32m  → internal/http[m                                                               
+[7m    http.Client (x1) ▾[m                                                          
+[90m      + core/server.go:42:8-22[m                                                  
+[90m[m                                                                                
+[1;96mChanged Dependencies[m                                                            
+[90m  → internal/config[m                                                             
+[32m    config.Timeout (x1) ▸[m                                                       
+[31m    config.Debug (x1) ▸[m                                                         
+[90m[m                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+[90mesc/backspace: back | j/k: navigate | space: expand | q: quit[m

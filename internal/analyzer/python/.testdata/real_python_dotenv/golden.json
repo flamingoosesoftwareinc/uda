@@ -1,0 +1,1930 @@
+[
+  {
+    "package": "dotenv",
+    "inward": {},
+    "outward": {
+      "dotenv.ipython": {
+        "dotenv.ipython.load_ipython_extension": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/__init__.py",
+              "line": 9,
+              "col_start": 5,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "dotenv.main": {},
+      "typing": {
+        "typing.Any": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/__init__.py",
+              "line": 6,
+              "col_start": 37,
+              "col_end": 40
+            }
+          ]
+        },
+        "typing.Optional": {
+          "count": 5,
+          "positions": [
+            {
+              "file": "src/dotenv/__init__.py",
+              "line": 13,
+              "col_start": 11,
+              "col_end": 19
+            },
+            {
+              "file": "src/dotenv/__init__.py",
+              "line": 14,
+              "col_start": 13,
+              "col_end": 21
+            },
+            {
+              "file": "src/dotenv/__init__.py",
+              "line": 15,
+              "col_start": 10,
+              "col_end": 18
+            },
+            {
+              "file": "src/dotenv/__init__.py",
+              "line": 16,
+              "col_start": 12,
+              "col_end": 20
+            },
+            {
+              "file": "src/dotenv/__init__.py",
+              "line": 17,
+              "col_start": 12,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "dotenv.__main__",
+    "inward": {},
+    "outward": {
+      "dotenv.cli": {
+        "dotenv.cli": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/__main__.py",
+              "line": 6,
+              "col_start": 5,
+              "col_end": 8
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "dotenv.cli",
+    "inward": {
+      "dotenv.__main__": {
+        "dotenv.cli": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/__main__.py",
+              "line": 6,
+              "col_start": 5,
+              "col_end": 8
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "click": {
+        "click": {
+          "count": 36,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 38,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 39,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 43,
+              "col_start": 10,
+              "col_end": 15
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 46,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 50,
+              "col_start": 10,
+              "col_end": 15
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 53,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 57,
+              "col_start": 10,
+              "col_end": 15
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 60,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 61,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 62,
+              "col_start": 14,
+              "col_end": 19
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 84,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 85,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 89,
+              "col_start": 10,
+              "col_end": 15
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 93,
+              "col_start": 22,
+              "col_end": 27
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 101,
+              "col_start": 9,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 109,
+              "col_start": 17,
+              "col_end": 22
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 113,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 114,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 115,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 116,
+              "col_start": 20,
+              "col_end": 25
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 123,
+              "col_start": 9,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 129,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 130,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 131,
+              "col_start": 14,
+              "col_end": 19
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 140,
+              "col_start": 9,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 146,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 147,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 148,
+              "col_start": 16,
+              "col_end": 21
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 154,
+              "col_start": 9,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 166,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 167,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 172,
+              "col_start": 2,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 172,
+              "col_start": 47,
+              "col_end": 52
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 173,
+              "col_start": 14,
+              "col_end": 19
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 177,
+              "col_start": 15,
+              "col_end": 20
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 187,
+              "col_start": 9,
+              "col_end": 14
+            }
+          ]
+        }
+      },
+      "contextlib": {
+        "contextlib.contextmanager": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 67,
+              "col_start": 2,
+              "col_end": 16
+            }
+          ]
+        }
+      },
+      "dotenv.main": {
+        "dotenv.main.dotenv_values": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 98,
+              "col_start": 18,
+              "col_end": 31
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 136,
+              "col_start": 18,
+              "col_end": 31
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 182,
+              "col_start": 23,
+              "col_end": 36
+            }
+          ]
+        },
+        "dotenv.main.set_key": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 121,
+              "col_start": 27,
+              "col_end": 34
+            }
+          ]
+        },
+        "dotenv.main.unset_key": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 152,
+              "col_start": 20,
+              "col_end": 29
+            }
+          ]
+        }
+      },
+      "dotenv.version": {},
+      "json": {
+        "json": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 101,
+              "col_start": 20,
+              "col_end": 24
+            }
+          ]
+        }
+      },
+      "os": {
+        "os": {
+          "count": 7,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 31,
+              "col_start": 15,
+              "col_end": 17
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 34,
+              "col_start": 12,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 68,
+              "col_start": 23,
+              "col_end": 25
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 176,
+              "col_start": 12,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 183,
+              "col_start": 52,
+              "col_end": 54
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 214,
+              "col_start": 15,
+              "col_end": 17
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 225,
+              "col_start": 9,
+              "col_end": 11
+            }
+          ]
+        }
+      },
+      "shlex": {
+        "shlex": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 108,
+              "col_start": 25,
+              "col_end": 30
+            }
+          ]
+        }
+      },
+      "subprocess": {
+        "subprocess.Popen": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 220,
+              "col_start": 13,
+              "col_end": 18
+            }
+          ]
+        }
+      },
+      "sys": {
+        "sys": {
+          "count": 11,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 8,
+              "col_start": 4,
+              "col_end": 7
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 14,
+              "col_start": 5,
+              "col_end": 8
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 18,
+              "col_start": 5,
+              "col_end": 8
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 79,
+              "col_start": 54,
+              "col_end": 57
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 80,
+              "col_start": 9,
+              "col_end": 12
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 125,
+              "col_start": 9,
+              "col_end": 12
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 142,
+              "col_start": 9,
+              "col_end": 12
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 156,
+              "col_start": 9,
+              "col_end": 12
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 188,
+              "col_start": 9,
+              "col_end": 12
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 217,
+              "col_start": 8,
+              "col_end": 11
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 223,
+              "col_start": 9,
+              "col_end": 12
+            }
+          ]
+        }
+      },
+      "typing": {
+        "typing.Any": {
+          "count": 7,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 62,
+              "col_start": 35,
+              "col_end": 38
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 62,
+              "col_start": 47,
+              "col_end": 50
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 62,
+              "col_start": 60,
+              "col_end": 63
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 116,
+              "col_start": 40,
+              "col_end": 43
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 116,
+              "col_start": 52,
+              "col_end": 55
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 131,
+              "col_start": 34,
+              "col_end": 37
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 148,
+              "col_start": 36,
+              "col_end": 39
+            }
+          ]
+        },
+        "typing.Dict": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 193,
+              "col_start": 42,
+              "col_end": 46
+            }
+          ]
+        },
+        "typing.IO": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 68,
+              "col_start": 48,
+              "col_end": 50
+            }
+          ]
+        },
+        "typing.Iterator": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 68,
+              "col_start": 39,
+              "col_end": 47
+            }
+          ]
+        },
+        "typing.List": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 193,
+              "col_start": 26,
+              "col_end": 30
+            }
+          ]
+        },
+        "typing.Optional": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 24,
+              "col_start": 24,
+              "col_end": 32
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "dotenv.ipython",
+    "inward": {
+      "dotenv": {
+        "dotenv.ipython.load_ipython_extension": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/__init__.py",
+              "line": 9,
+              "col_start": 5,
+              "col_end": 27
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "IPython.core.magic": {
+        "IPython.core.magic.Magics": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 12,
+              "col_start": 21,
+              "col_end": 27
+            }
+          ]
+        },
+        "IPython.core.magic.line_magic": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 33,
+              "col_start": 6,
+              "col_end": 16
+            }
+          ]
+        },
+        "IPython.core.magic.magics_class": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 11,
+              "col_start": 2,
+              "col_end": 14
+            }
+          ]
+        }
+      },
+      "IPython.core.magic_arguments": {
+        "IPython.core.magic_arguments": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 13,
+              "col_start": 6,
+              "col_end": 21
+            }
+          ]
+        },
+        "IPython.core.magic_arguments.argument": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 14,
+              "col_start": 6,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 20,
+              "col_start": 6,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 26,
+              "col_start": 6,
+              "col_end": 14
+            }
+          ]
+        },
+        "IPython.core.magic_arguments.parse_argstring": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 35,
+              "col_start": 16,
+              "col_end": 31
+            }
+          ]
+        }
+      },
+      "dotenv.main": {
+        "dotenv.main.find_dotenv": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 39,
+              "col_start": 27,
+              "col_end": 38
+            }
+          ]
+        },
+        "dotenv.main.load_dotenv": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 45,
+              "col_start": 9,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "dotenv.main",
+    "inward": {
+      "dotenv": {},
+      "dotenv.cli": {
+        "dotenv.main.dotenv_values": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 98,
+              "col_start": 18,
+              "col_end": 31
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 136,
+              "col_start": 18,
+              "col_end": 31
+            },
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 182,
+              "col_start": 23,
+              "col_end": 36
+            }
+          ]
+        },
+        "dotenv.main.set_key": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 121,
+              "col_start": 27,
+              "col_end": 34
+            }
+          ]
+        },
+        "dotenv.main.unset_key": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/cli.py",
+              "line": 152,
+              "col_start": 20,
+              "col_end": 29
+            }
+          ]
+        }
+      },
+      "dotenv.ipython": {
+        "dotenv.main.find_dotenv": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 39,
+              "col_start": 27,
+              "col_end": 38
+            }
+          ]
+        },
+        "dotenv.main.load_dotenv": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/ipython.py",
+              "line": 45,
+              "col_start": 9,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "collections": {
+        "collections.OrderedDict": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 86,
+              "col_start": 26,
+              "col_end": 37
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 90,
+              "col_start": 26,
+              "col_end": 37
+            }
+          ]
+        }
+      },
+      "contextlib": {
+        "contextlib.contextmanager": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 63,
+              "col_start": 6,
+              "col_end": 20
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 141,
+              "col_start": 2,
+              "col_end": 16
+            }
+          ]
+        }
+      },
+      "dotenv.parser": {
+        "dotenv.parser.Binding": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 35,
+              "col_start": 52,
+              "col_end": 59
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 35,
+              "col_start": 74,
+              "col_end": 81
+            }
+          ]
+        },
+        "dotenv.parser.parse_stream": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 96,
+              "col_start": 56,
+              "col_end": 68
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 196,
+              "col_start": 52,
+              "col_end": 64
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 229,
+              "col_start": 52,
+              "col_end": 64
+            }
+          ]
+        }
+      },
+      "dotenv.variables": {
+        "dotenv.variables.parse_variables": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 254,
+              "col_start": 21,
+              "col_end": 36
+            }
+          ]
+        }
+      },
+      "io": {
+        "io": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 76,
+              "col_start": 19,
+              "col_end": 21
+            }
+          ]
+        }
+      },
+      "logging": {
+        "logging": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 22,
+              "col_start": 10,
+              "col_end": 17
+            }
+          ]
+        }
+      },
+      "os": {
+        "os": {
+          "count": 22,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 29,
+              "col_start": 40,
+              "col_end": 42
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 31,
+              "col_start": 13,
+              "col_end": 15
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 108,
+              "col_start": 21,
+              "col_end": 23
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 111,
+              "col_start": 17,
+              "col_end": 19
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 159,
+              "col_start": 9,
+              "col_end": 11
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 223,
+              "col_start": 12,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 257,
+              "col_start": 28,
+              "col_end": 30
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 261,
+              "col_start": 28,
+              "col_end": 30
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 273,
+              "col_start": 12,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 276,
+              "col_start": 8,
+              "col_end": 10
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 277,
+              "col_start": 16,
+              "col_end": 18
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 280,
+              "col_start": 19,
+              "col_end": 21
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 283,
+              "col_start": 22,
+              "col_end": 24
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 283,
+              "col_start": 38,
+              "col_end": 40
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 283,
+              "col_start": 64,
+              "col_end": 66
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 313,
+              "col_start": 16,
+              "col_end": 18
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 319,
+              "col_start": 63,
+              "col_end": 65
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 325,
+              "col_start": 16,
+              "col_end": 18
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 325,
+              "col_start": 32,
+              "col_end": 34
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 328,
+              "col_start": 22,
+              "col_end": 24
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 427,
+              "col_start": 8,
+              "col_end": 10
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 431,
+              "col_start": 14,
+              "col_end": 16
+            }
+          ]
+        }
+      },
+      "pathlib": {
+        "pathlib": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 146,
+              "col_start": 5,
+              "col_end": 12
+            }
+          ]
+        }
+      },
+      "shutil": {
+        "shutil": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 157,
+              "col_start": 9,
+              "col_end": 15
+            }
+          ]
+        }
+      },
+      "stat": {
+        "stat": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 435,
+              "col_start": 12,
+              "col_end": 16
+            }
+          ]
+        }
+      },
+      "sys": {
+        "sys": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 309,
+              "col_start": 16,
+              "col_end": 19
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 316,
+              "col_start": 17,
+              "col_end": 20
+            }
+          ]
+        }
+      },
+      "tempfile": {
+        "tempfile": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 148,
+              "col_start": 10,
+              "col_end": 18
+            }
+          ]
+        }
+      },
+      "typing": {
+        "typing.Dict": {
+          "count": 5,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 57,
+              "col_start": 30,
+              "col_end": 34
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 78,
+              "col_start": 23,
+              "col_end": 27
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 248,
+              "col_start": 17,
+              "col_end": 21
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 255,
+              "col_start": 18,
+              "col_end": 22
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 393,
+              "col_start": 6,
+              "col_end": 10
+            }
+          ]
+        },
+        "typing.IO": {
+          "count": 7,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 49,
+              "col_start": 26,
+              "col_end": 28
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 56,
+              "col_start": 31,
+              "col_end": 33
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 64,
+              "col_start": 39,
+              "col_end": 41
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 145,
+              "col_start": 21,
+              "col_end": 23
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 145,
+              "col_start": 30,
+              "col_end": 32
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 340,
+              "col_start": 22,
+              "col_end": 24
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 389,
+              "col_start": 22,
+              "col_end": 24
+            }
+          ]
+        },
+        "typing.Iterable": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 245,
+              "col_start": 13,
+              "col_end": 21
+            }
+          ]
+        },
+        "typing.Iterator": {
+          "count": 6,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 35,
+              "col_start": 43,
+              "col_end": 51
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 35,
+              "col_start": 65,
+              "col_end": 73
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 64,
+              "col_start": 30,
+              "col_end": 38
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 94,
+              "col_start": 24,
+              "col_end": 32
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 145,
+              "col_start": 6,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 269,
+              "col_start": 33,
+              "col_end": 41
+            }
+          ]
+        },
+        "typing.Mapping": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 247,
+              "col_start": 6,
+              "col_end": 13
+            }
+          ]
+        },
+        "typing.Optional": {
+          "count": 29,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 48,
+              "col_start": 22,
+              "col_end": 30
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 49,
+              "col_start": 17,
+              "col_end": 25
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 51,
+              "col_start": 19,
+              "col_end": 27
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 55,
+              "col_start": 27,
+              "col_end": 35
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 56,
+              "col_start": 22,
+              "col_end": 30
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 57,
+              "col_start": 21,
+              "col_end": 29
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 57,
+              "col_start": 40,
+              "col_end": 48
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 59,
+              "col_start": 24,
+              "col_end": 32
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 78,
+              "col_start": 33,
+              "col_end": 41
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 94,
+              "col_start": 44,
+              "col_end": 52
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 115,
+              "col_start": 32,
+              "col_end": 40
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 131,
+              "col_start": 15,
+              "col_end": 23
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 132,
+              "col_start": 6,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 144,
+              "col_start": 15,
+              "col_end": 23
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 169,
+              "col_start": 15,
+              "col_end": 23
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 170,
+              "col_start": 12,
+              "col_end": 20
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 215,
+              "col_start": 15,
+              "col_end": 23
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 216,
+              "col_start": 12,
+              "col_end": 20
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 245,
+              "col_start": 33,
+              "col_end": 41
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 247,
+              "col_start": 19,
+              "col_end": 27
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 248,
+              "col_start": 27,
+              "col_end": 35
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 255,
+              "col_start": 28,
+              "col_end": 36
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 339,
+              "col_start": 18,
+              "col_end": 26
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 340,
+              "col_start": 13,
+              "col_end": 21
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 344,
+              "col_start": 15,
+              "col_end": 23
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 388,
+              "col_start": 18,
+              "col_end": 26
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 389,
+              "col_start": 13,
+              "col_end": 21
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 392,
+              "col_start": 15,
+              "col_end": 23
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 393,
+              "col_start": 16,
+              "col_end": 24
+            }
+          ]
+        },
+        "typing.Tuple": {
+          "count": 5,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 94,
+              "col_start": 33,
+              "col_end": 38
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 145,
+              "col_start": 15,
+              "col_end": 20
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 170,
+              "col_start": 6,
+              "col_end": 11
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 216,
+              "col_start": 6,
+              "col_end": 11
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 245,
+              "col_start": 22,
+              "col_end": 27
+            }
+          ]
+        },
+        "typing.Union": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 20,
+              "col_start": 11,
+              "col_end": 16
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "dotenv.parser",
+    "inward": {
+      "dotenv.main": {
+        "dotenv.parser.Binding": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 35,
+              "col_start": 52,
+              "col_end": 59
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 35,
+              "col_start": 74,
+              "col_end": 81
+            }
+          ]
+        },
+        "dotenv.parser.parse_stream": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 96,
+              "col_start": 56,
+              "col_end": 68
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 196,
+              "col_start": 52,
+              "col_end": 64
+            },
+            {
+              "file": "src/dotenv/main.py",
+              "line": 229,
+              "col_start": 52,
+              "col_end": 64
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "codecs": {
+        "codecs": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 107,
+              "col_start": 16,
+              "col_end": 22
+            }
+          ]
+        }
+      },
+      "re": {
+        "re": {
+          "count": 5,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 15,
+              "col_start": 12,
+              "col_end": 14
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 15,
+              "col_start": 31,
+              "col_end": 33
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 19,
+              "col_start": 56,
+              "col_end": 58
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 62,
+              "col_start": 26,
+              "col_end": 28
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 125,
+              "col_start": 12,
+              "col_end": 14
+            }
+          ]
+        }
+      },
+      "typing": {
+        "typing.IO": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 70,
+              "col_start": 32,
+              "col_end": 34
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 179,
+              "col_start": 26,
+              "col_end": 28
+            }
+          ]
+        },
+        "typing.Iterator": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 179,
+              "col_start": 38,
+              "col_end": 46
+            }
+          ]
+        },
+        "typing.Match": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 106,
+              "col_start": 29,
+              "col_end": 34
+            }
+          ]
+        },
+        "typing.NamedTuple": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 35,
+              "col_start": 16,
+              "col_end": 26
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 40,
+              "col_start": 15,
+              "col_end": 25
+            }
+          ]
+        },
+        "typing.Optional": {
+          "count": 4,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 41,
+              "col_start": 10,
+              "col_end": 18
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 42,
+              "col_start": 12,
+              "col_end": 20
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 112,
+              "col_start": 34,
+              "col_end": 42
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 158,
+              "col_start": 20,
+              "col_end": 28
+            }
+          ]
+        },
+        "typing.Pattern": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 14,
+              "col_start": 54,
+              "col_end": 61
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 97,
+              "col_start": 33,
+              "col_end": 40
+            },
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 105,
+              "col_start": 27,
+              "col_end": 34
+            }
+          ]
+        },
+        "typing.Sequence": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/parser.py",
+              "line": 97,
+              "col_start": 50,
+              "col_end": 58
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "dotenv.variables",
+    "inward": {
+      "dotenv.main": {
+        "dotenv.variables.parse_variables": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/main.py",
+              "line": 254,
+              "col_start": 21,
+              "col_end": 36
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "abc": {
+        "abc.ABCMeta": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 18,
+              "col_start": 22,
+              "col_end": 29
+            }
+          ]
+        },
+        "abc.abstractmethod": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 25,
+              "col_start": 6,
+              "col_end": 20
+            }
+          ]
+        }
+      },
+      "re": {
+        "re": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 5,
+              "col_start": 33,
+              "col_end": 35
+            },
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 14,
+              "col_start": 5,
+              "col_end": 7
+            }
+          ]
+        }
+      },
+      "typing": {
+        "typing.Iterator": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 70,
+              "col_start": 36,
+              "col_end": 44
+            }
+          ]
+        },
+        "typing.Mapping": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 26,
+              "col_start": 28,
+              "col_end": 35
+            },
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 44,
+              "col_start": 28,
+              "col_end": 35
+            },
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 64,
+              "col_start": 28,
+              "col_end": 35
+            }
+          ]
+        },
+        "typing.Optional": {
+          "count": 4,
+          "positions": [
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 26,
+              "col_start": 41,
+              "col_end": 49
+            },
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 44,
+              "col_start": 41,
+              "col_end": 49
+            },
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 49,
+              "col_start": 44,
+              "col_end": 52
+            },
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 64,
+              "col_start": 41,
+              "col_end": 49
+            }
+          ]
+        },
+        "typing.Pattern": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/dotenv/variables.py",
+              "line": 5,
+              "col_start": 18,
+              "col_end": 25
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "dotenv.version",
+    "inward": {
+      "dotenv.cli": {}
+    },
+    "outward": {}
+  }
+]

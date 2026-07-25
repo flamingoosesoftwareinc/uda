@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "my-app",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "my-app/src/features/auth",
+    "Dirs": [
+      "src/features/auth"
+    ]
+  },
+  {
+    "Name": "my-app/src/features/users",
+    "Dirs": [
+      "src/features/users"
+    ]
+  },
+  {
+    "Name": "my-app/src/shared",
+    "Dirs": [
+      "src/shared"
+    ]
+  }
+]

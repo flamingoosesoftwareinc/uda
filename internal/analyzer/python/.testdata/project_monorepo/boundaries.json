@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "api",
+    "Dirs": [
+      "packages/api/api"
+    ]
+  },
+  {
+    "Name": "api.routes",
+    "Dirs": [
+      "packages/api/api"
+    ]
+  },
+  {
+    "Name": "core",
+    "Dirs": [
+      "packages/core/core"
+    ]
+  },
+  {
+    "Name": "core.models",
+    "Dirs": [
+      "packages/core/core"
+    ]
+  },
+  {
+    "Name": "core.service",
+    "Dirs": [
+      "packages/core/core"
+    ]
+  }
+]

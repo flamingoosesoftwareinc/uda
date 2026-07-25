@@ -1,0 +1,17 @@
+[
+  {
+    "package_a": "auth",
+    "package_b": "session",
+    "correlation": 1
+  },
+  {
+    "package_a": "billing",
+    "package_b": "session",
+    "correlation": 0.6791197171275478
+  },
+  {
+    "package_a": "auth",
+    "package_b": "billing",
+    "correlation": 0.6791197171275477
+  }
+]

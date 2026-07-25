@@ -1,0 +1,176 @@
+[
+  {
+    "package": "app",
+    "inward": {},
+    "outward": {
+      "core::service": {
+        "core::service::Service": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/main.rs",
+              "line": 7,
+              "col_start": 15,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "log": {
+        "log::info": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/main.rs",
+              "line": 8,
+              "col_start": 5,
+              "col_end": 9
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "app::routes",
+    "inward": {},
+    "outward": {
+      "core::model": {
+        "core::model::Request": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/routes.rs",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "core::service": {
+        "core::service::Service": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/routes.rs",
+              "line": 5,
+              "col_start": 20,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "log": {
+        "log::debug": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/routes.rs",
+              "line": 7,
+              "col_start": 5,
+              "col_end": 10
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "core",
+    "inward": {},
+    "outward": {}
+  },
+  {
+    "package": "core::model",
+    "inward": {
+      "app::routes": {
+        "core::model::Request": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/routes.rs",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "core::service": {
+        "core::model::Request": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "core/src/service.rs",
+              "line": 11,
+              "col_start": 32,
+              "col_end": 39
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "serde": {
+        "serde::Serialize": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "core/src/model.rs",
+              "line": 3,
+              "col_start": 9,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "core::service",
+    "inward": {
+      "app": {
+        "core::service::Service": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/main.rs",
+              "line": 7,
+              "col_start": 15,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "app::routes": {
+        "core::service::Service": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/routes.rs",
+              "line": 5,
+              "col_start": 20,
+              "col_end": 27
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "core::model": {
+        "core::model::Request": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "core/src/service.rs",
+              "line": 11,
+              "col_start": 32,
+              "col_end": 39
+            }
+          ]
+        }
+      }
+    }
+  }
+]

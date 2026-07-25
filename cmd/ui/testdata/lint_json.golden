@@ -1,0 +1,36 @@
+{
+  "languages": [
+    {
+      "language": "go",
+      "violations": [
+        {
+          "kind": "forbidden",
+          "edge": "internal/domain -\u003e internal/adapter/http",
+          "rule": "internal/domain -\u003e internal/adapter/**"
+        },
+        {
+          "kind": "stable",
+          "edge": "internal/domain -\u003e internal/cache",
+          "rule": "internal/domain"
+        },
+        {
+          "kind": "unlisted",
+          "edge": "cmd -\u003e internal/cache"
+        },
+        {
+          "kind": "pending",
+          "edge": "cmd -\u003e internal/lint"
+        }
+      ]
+    },
+    {
+      "language": "typescript",
+      "violations": [
+        {
+          "kind": "unlisted",
+          "edge": "src/api -\u003e src/core"
+        }
+      ]
+    }
+  ]
+}

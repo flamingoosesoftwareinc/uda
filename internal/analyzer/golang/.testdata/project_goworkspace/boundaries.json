@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "example.com/cowsay/cmd",
+    "Dirs": [
+      "cowsay/cmd"
+    ]
+  },
+  {
+    "Name": "example.com/cowsay/main",
+    "Dirs": [
+      "cowsay"
+    ]
+  },
+  {
+    "Name": "example.com/cowsay/moo",
+    "Dirs": [
+      "cowsay/moo"
+    ]
+  },
+  {
+    "Name": "example.com/foobarbaz/internal/greet",
+    "Dirs": [
+      "foobarbaz/internal/greet"
+    ]
+  },
+  {
+    "Name": "example.com/foobarbaz/main",
+    "Dirs": [
+      "foobarbaz"
+    ]
+  }
+]

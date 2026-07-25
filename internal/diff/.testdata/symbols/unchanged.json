@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "fmt.Errorf",
+    "DiffType": 0,
+    "PrevCount": 1,
+    "CurrCount": 1,
+    "Positions": [
+      {
+        "Position": {
+          "file": "main.go",
+          "line": 10,
+          "col_start": 0,
+          "col_end": 0
+        },
+        "DiffType": 0
+      }
+    ]
+  }
+]

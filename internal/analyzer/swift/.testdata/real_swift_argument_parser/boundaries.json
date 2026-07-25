@@ -1,0 +1,30 @@
+[
+  {
+    "Name": "ArgumentParser",
+    "Dirs": [
+      "Sources/ArgumentParser/Completions",
+      "Sources/ArgumentParser/Parsable Types",
+      "Sources/ArgumentParser/Parsing",
+      "Sources/ArgumentParser/Usage",
+      "Sources/ArgumentParser/Utilities"
+    ]
+  },
+  {
+    "Name": "ArgumentParserTestHelpers",
+    "Dirs": [
+      "Sources/ArgumentParserTestHelpers"
+    ]
+  },
+  {
+    "Name": "ArgumentParserToolInfo",
+    "Dirs": [
+      "Sources/ArgumentParserToolInfo"
+    ]
+  },
+  {
+    "Name": "ArgumentParserToolInfoTests",
+    "Dirs": [
+      "Tests/ArgumentParserToolInfoTests"
+    ]
+  }
+]

@@ -1,0 +1,98 @@
+[
+  {
+    "package": "api",
+    "inward": {},
+    "outward": {
+      "api.routes": {},
+      "core.models": {},
+      "core.service": {
+        "core.service.UserService": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "packages/api/api/routes.py",
+              "line": 7,
+              "col_start": 15,
+              "col_end": 26
+            }
+          ]
+        }
+      },
+      "flask": {
+        "flask.Flask": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "packages/api/api/routes.py",
+              "line": 5,
+              "col_start": 21,
+              "col_end": 26
+            },
+            {
+              "file": "packages/api/api/routes.py",
+              "line": 6,
+              "col_start": 11,
+              "col_end": 16
+            }
+          ]
+        },
+        "flask.jsonify": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "packages/api/api/routes.py",
+              "line": 13,
+              "col_start": 20,
+              "col_end": 27
+            },
+            {
+              "file": "packages/api/api/routes.py",
+              "line": 14,
+              "col_start": 16,
+              "col_end": 23
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "core",
+    "inward": {},
+    "outward": {
+      "core.models": {
+        "core.models.User": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "packages/core/core/service.py",
+              "line": 5,
+              "col_start": 26,
+              "col_end": 30
+            },
+            {
+              "file": "packages/core/core/service.py",
+              "line": 7,
+              "col_start": 30,
+              "col_end": 34
+            }
+          ]
+        }
+      },
+      "core.service": {},
+      "dataclasses": {
+        "dataclasses.dataclass": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "packages/core/core/models.py",
+              "line": 3,
+              "col_start": 2,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "app",
+    "Dirs": [
+      "app/src"
+    ]
+  },
+  {
+    "Name": "core",
+    "Dirs": [
+      "core/src"
+    ]
+  }
+]

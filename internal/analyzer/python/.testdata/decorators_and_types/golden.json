@@ -1,0 +1,128 @@
+[
+  {
+    "package": "typed_app",
+    "inward": {},
+    "outward": {}
+  },
+  {
+    "package": "typed_app.decorators",
+    "inward": {
+      "typed_app.handlers": {
+        "typed_app.decorators.validate": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "typed_app/handlers.py",
+              "line": 5,
+              "col_start": 2,
+              "col_end": 10
+            },
+            {
+              "file": "typed_app/handlers.py",
+              "line": 10,
+              "col_start": 2,
+              "col_end": 10
+            }
+          ]
+        }
+      },
+      "typed_app.models": {
+        "typed_app.decorators.cache": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "typed_app/models.py",
+              "line": 9,
+              "col_start": 6,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "typed_app.handlers",
+    "inward": {},
+    "outward": {
+      "typed_app.decorators": {
+        "typed_app.decorators.validate": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "typed_app/handlers.py",
+              "line": 5,
+              "col_start": 2,
+              "col_end": 10
+            },
+            {
+              "file": "typed_app/handlers.py",
+              "line": 10,
+              "col_start": 2,
+              "col_end": 10
+            }
+          ]
+        }
+      },
+      "typed_app.models": {
+        "typed_app.models.Model": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "typed_app/handlers.py",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 20
+            },
+            {
+              "file": "typed_app/handlers.py",
+              "line": 11,
+              "col_start": 16,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "typed_app.models",
+    "inward": {
+      "typed_app.handlers": {
+        "typed_app.models.Model": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "typed_app/handlers.py",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 20
+            },
+            {
+              "file": "typed_app/handlers.py",
+              "line": 11,
+              "col_start": 16,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "typed_app.decorators": {
+        "typed_app.decorators.cache": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "typed_app/models.py",
+              "line": 9,
+              "col_start": 6,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    }
+  }
+]

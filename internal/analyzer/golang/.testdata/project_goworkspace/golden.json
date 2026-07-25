@@ -1,0 +1,137 @@
+[
+  {
+    "package": "example.com/cowsay/cmd",
+    "inward": {
+      "example.com/cowsay/main": {
+        "cmd.Run": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cowsay/main.go",
+              "line": 17,
+              "col_start": 2,
+              "col_end": 9
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "example.com/cowsay/moo": {
+        "moo.Say": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cowsay/cmd/cmd.go",
+              "line": 10,
+              "col_start": 14,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "example.com/cowsay/main",
+    "inward": {},
+    "outward": {
+      "example.com/cowsay/cmd": {
+        "cmd.Run": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cowsay/main.go",
+              "line": 17,
+              "col_start": 2,
+              "col_end": 9
+            }
+          ]
+        }
+      },
+      "example.com/cowsay/moo": {
+        "moo.Say": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cowsay/main.go",
+              "line": 16,
+              "col_start": 14,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "example.com/cowsay/moo",
+    "inward": {
+      "example.com/cowsay/cmd": {
+        "moo.Say": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cowsay/cmd/cmd.go",
+              "line": 10,
+              "col_start": 14,
+              "col_end": 21
+            }
+          ]
+        }
+      },
+      "example.com/cowsay/main": {
+        "moo.Say": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cowsay/main.go",
+              "line": 16,
+              "col_start": 14,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "example.com/foobarbaz/internal/greet",
+    "inward": {
+      "example.com/foobarbaz/main": {
+        "greet.Hello": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "foobarbaz/main.go",
+              "line": 10,
+              "col_start": 14,
+              "col_end": 25
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "example.com/foobarbaz/main",
+    "inward": {},
+    "outward": {
+      "example.com/foobarbaz/internal/greet": {
+        "greet.Hello": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "foobarbaz/main.go",
+              "line": 10,
+              "col_start": 14,
+              "col_end": 25
+            }
+          ]
+        }
+      }
+    }
+  }
+]

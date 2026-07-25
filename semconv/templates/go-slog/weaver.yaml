@@ -1,0 +1,28 @@
+text_maps:
+  go_types:
+    string: string
+    int: int64
+    double: float64
+    boolean: bool
+    string[]: "[]string"
+    int[]: "[]int64"
+    double[]: "[]float64"
+    boolean[]: "[]bool"
+  slog_func:
+    string: String
+    int: Int64
+    double: Float64
+    boolean: Bool
+    string[]: Any
+    int[]: Any
+    double[]: Any
+    boolean[]: Any
+
+params:
+  version: "0.0.0"
+
+templates:
+  - template: "logschema.go.j2"
+    filter: semconv_grouped_attributes
+    application_mode: single
+    file_name: "logschema.go"

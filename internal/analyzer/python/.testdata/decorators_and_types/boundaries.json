@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "typed_app",
+    "Dirs": [
+      "typed_app"
+    ]
+  },
+  {
+    "Name": "typed_app.decorators",
+    "Dirs": [
+      "typed_app"
+    ]
+  },
+  {
+    "Name": "typed_app.handlers",
+    "Dirs": [
+      "typed_app"
+    ]
+  },
+  {
+    "Name": "typed_app.models",
+    "Dirs": [
+      "typed_app"
+    ]
+  }
+]

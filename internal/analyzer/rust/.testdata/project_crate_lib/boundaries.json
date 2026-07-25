@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "dual_target",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "dual_target::util",
+    "Dirs": [
+      "src"
+    ]
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "Package": "internal/core",
+    "DiffType": 0,
+    "InwardDiff": null,
+    "OutwardDiff": [
+      {
+        "Package": "internal/db",
+        "DiffType": 0,
+        "Symbols": [
+          {
+            "Name": "db.Query",
+            "DiffType": 0,
+            "PrevCount": 1,
+            "CurrCount": 1,
+            "Positions": null
+          }
+        ]
+      }
+    ]
+  }
+]

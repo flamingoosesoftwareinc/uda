@@ -1,0 +1,10 @@
+[package]
+name = "iso-cli"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+iso-model = { path = "../iso-model" }
+casesplit = { path = "../casesplit" }
+renamed-lib = { path = "../renamed-lib" }
+serde = "1.0"

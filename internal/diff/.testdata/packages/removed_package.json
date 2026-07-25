@@ -1,0 +1,22 @@
+[
+  {
+    "Package": "internal/oldutil",
+    "DiffType": 2,
+    "InwardDiff": null,
+    "OutwardDiff": [
+      {
+        "Package": "internal/core",
+        "DiffType": 2,
+        "Symbols": [
+          {
+            "Name": "core.Helper",
+            "DiffType": 2,
+            "PrevCount": 1,
+            "CurrCount": 0,
+            "Positions": null
+          }
+        ]
+      }
+    ]
+  }
+]

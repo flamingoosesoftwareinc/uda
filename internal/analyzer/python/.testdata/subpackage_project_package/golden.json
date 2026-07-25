@@ -1,0 +1,101 @@
+[
+  {
+    "package": "myproject",
+    "inward": {},
+    "outward": {
+      "myproject.config": {
+        "myproject.config.AppConfig": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/main.py",
+              "line": 5,
+              "col_start": 14,
+              "col_end": 23
+            }
+          ]
+        }
+      },
+      "myproject.handlers": {
+        "myproject.handlers.APIHandler": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/main.py",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 25
+            }
+          ]
+        }
+      },
+      "pydantic": {
+        "pydantic.BaseModel": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/config.py",
+              "line": 3,
+              "col_start": 17,
+              "col_end": 26
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "myproject.handlers",
+    "inward": {
+      "myproject": {
+        "myproject.handlers.APIHandler": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/main.py",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 25
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "config": {
+        "config.AppConfig": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "src/myproject/handlers/api.py",
+              "line": 5,
+              "col_start": 32,
+              "col_end": 41
+            },
+            {
+              "file": "src/myproject/handlers/auth.py",
+              "line": 4,
+              "col_start": 32,
+              "col_end": 41
+            }
+          ]
+        }
+      },
+      "myproject.auth": {
+        "myproject.auth.AuthHandler": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/handlers/api.py",
+              "line": 7,
+              "col_start": 21,
+              "col_end": 32
+            }
+          ]
+        }
+      },
+      "myproject.handlers.api": {},
+      "myproject.handlers.auth": {}
+    }
+  }
+]

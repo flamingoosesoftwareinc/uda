@@ -1,0 +1,112 @@
+[
+  {
+    "package": "app",
+    "inward": {},
+    "outward": {
+      "core": {
+        "core::model::Request": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/routes.rs",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 27
+            }
+          ]
+        },
+        "core::service::Service": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "app/src/main.rs",
+              "line": 7,
+              "col_start": 15,
+              "col_end": 27
+            },
+            {
+              "file": "app/src/routes.rs",
+              "line": 5,
+              "col_start": 20,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "log": {
+        "log::debug": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/routes.rs",
+              "line": 7,
+              "col_start": 5,
+              "col_end": 10
+            }
+          ]
+        },
+        "log::info": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/main.rs",
+              "line": 8,
+              "col_start": 5,
+              "col_end": 9
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "core",
+    "inward": {
+      "app": {
+        "core::model::Request": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "app/src/routes.rs",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 27
+            }
+          ]
+        },
+        "core::service::Service": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "app/src/main.rs",
+              "line": 7,
+              "col_start": 15,
+              "col_end": 27
+            },
+            {
+              "file": "app/src/routes.rs",
+              "line": 5,
+              "col_start": 20,
+              "col_end": 27
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "serde": {
+        "serde::Serialize": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "core/src/model.rs",
+              "line": 3,
+              "col_start": 9,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    }
+  }
+]

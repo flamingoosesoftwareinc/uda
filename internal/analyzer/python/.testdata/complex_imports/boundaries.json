@@ -1,0 +1,44 @@
+[
+  {
+    "Name": "webapp",
+    "Dirs": [
+      "webapp"
+    ]
+  },
+  {
+    "Name": "webapp.api",
+    "Dirs": [
+      "webapp/api"
+    ]
+  },
+  {
+    "Name": "webapp.api.routes",
+    "Dirs": [
+      "webapp/api"
+    ]
+  },
+  {
+    "Name": "webapp.models",
+    "Dirs": [
+      "webapp/models"
+    ]
+  },
+  {
+    "Name": "webapp.models.user",
+    "Dirs": [
+      "webapp/models"
+    ]
+  },
+  {
+    "Name": "webapp.services",
+    "Dirs": [
+      "webapp/services"
+    ]
+  },
+  {
+    "Name": "webapp.services.auth",
+    "Dirs": [
+      "webapp/services"
+    ]
+  }
+]

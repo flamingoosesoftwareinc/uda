@@ -1,0 +1,113 @@
+[
+  {
+    "package": "project_crate",
+    "inward": {},
+    "outward": {
+      "project_crate::config": {
+        "project_crate::config::Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 8,
+              "col_start": 15,
+              "col_end": 26
+            }
+          ]
+        }
+      },
+      "project_crate::handler": {
+        "project_crate::handler::handle": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 9,
+              "col_start": 5,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "project_crate::config",
+    "inward": {
+      "project_crate": {
+        "project_crate::config::Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 8,
+              "col_start": 15,
+              "col_end": 26
+            }
+          ]
+        }
+      },
+      "project_crate::handler": {
+        "project_crate::config::Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/handler.rs",
+              "line": 4,
+              "col_start": 21,
+              "col_end": 27
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "serde": {
+        "serde::Deserialize": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/config.rs",
+              "line": 3,
+              "col_start": 9,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "project_crate::handler",
+    "inward": {
+      "project_crate": {
+        "project_crate::handler::handle": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 9,
+              "col_start": 5,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "project_crate::config": {
+        "project_crate::config::Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/handler.rs",
+              "line": 4,
+              "col_start": 21,
+              "col_end": 27
+            }
+          ]
+        }
+      }
+    }
+  }
+]

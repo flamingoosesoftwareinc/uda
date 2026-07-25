@@ -1,0 +1,713 @@
+[
+  {
+    "package": "ArgumentParser",
+    "inward": {
+      "ArgumentParserTestHelpers": {
+        "ArgumentParser": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParserTestHelpers/TestHelpers.swift",
+              "line": 12,
+              "col_start": 8,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "ArgumentParserToolInfo": {
+        "ArgumentParserToolInfo": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 13,
+              "col_start": 17,
+              "col_end": 39
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 13,
+              "col_start": 17,
+              "col_end": 39
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ArgumentInfoV0": {
+          "count": 14,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 234,
+              "col_start": 29,
+              "col_end": 43
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 247,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 269,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 84,
+              "col_start": 19,
+              "col_end": 33
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 99,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 101,
+              "col_start": 22,
+              "col_end": 36
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 125,
+              "col_start": 24,
+              "col_end": 38
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 126,
+              "col_start": 33,
+              "col_end": 47
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 128,
+              "col_start": 9,
+              "col_end": 23
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 133,
+              "col_start": 23,
+              "col_end": 37
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 140,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 158,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 179,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 192,
+              "col_start": 11,
+              "col_end": 25
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.CommandInfoV0": {
+          "count": 8,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 225,
+              "col_start": 11,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 250,
+              "col_start": 44,
+              "col_end": 57
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 51,
+              "col_start": 24,
+              "col_end": 37
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 56,
+              "col_start": 9,
+              "col_end": 22
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 61,
+              "col_start": 11,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 76,
+              "col_start": 28,
+              "col_end": 41
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 79,
+              "col_start": 16,
+              "col_end": 29
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 86,
+              "col_start": 12,
+              "col_end": 25
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.CompletionKindV0": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 133,
+              "col_start": 38,
+              "col_end": 54
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 192,
+              "col_start": 26,
+              "col_end": 42
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.KindV0": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 101,
+              "col_start": 37,
+              "col_end": 43
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 140,
+              "col_start": 26,
+              "col_end": 32
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.NameInfoV0": {
+          "count": 4,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 269,
+              "col_start": 26,
+              "col_end": 36
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 126,
+              "col_start": 48,
+              "col_end": 58
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 128,
+              "col_start": 24,
+              "col_end": 34
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 179,
+              "col_start": 26,
+              "col_end": 36
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ParsingStrategyV0": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 125,
+              "col_start": 39,
+              "col_end": 56
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 158,
+              "col_start": 26,
+              "col_end": 43
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ToolInfoV0": {
+          "count": 6,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 131,
+              "col_start": 14,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 133,
+              "col_start": 14,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 135,
+              "col_start": 14,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 19,
+              "col_start": 25,
+              "col_end": 35
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 26,
+              "col_start": 21,
+              "col_end": 31
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 49,
+              "col_start": 11,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "ArgumentParserTestHelpers",
+    "inward": {},
+    "outward": {
+      "ArgumentParser": {
+        "ArgumentParser": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParserTestHelpers/TestHelpers.swift",
+              "line": 12,
+              "col_start": 8,
+              "col_end": 22
+            }
+          ]
+        }
+      },
+      "ArgumentParserToolInfo": {
+        "ArgumentParserToolInfo": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParserTestHelpers/TestHelpers.swift",
+              "line": 13,
+              "col_start": 8,
+              "col_end": 30
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ToolInfoV0": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParserTestHelpers/TestHelpers.swift",
+              "line": 608,
+              "col_start": 12,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "ArgumentParserToolInfo",
+    "inward": {
+      "ArgumentParser": {
+        "ArgumentParserToolInfo": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 13,
+              "col_start": 17,
+              "col_end": 39
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 13,
+              "col_start": 17,
+              "col_end": 39
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ArgumentInfoV0": {
+          "count": 14,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 234,
+              "col_start": 29,
+              "col_end": 43
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 247,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 269,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 84,
+              "col_start": 19,
+              "col_end": 33
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 99,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 101,
+              "col_start": 22,
+              "col_end": 36
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 125,
+              "col_start": 24,
+              "col_end": 38
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 126,
+              "col_start": 33,
+              "col_end": 47
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 128,
+              "col_start": 9,
+              "col_end": 23
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 133,
+              "col_start": 23,
+              "col_end": 37
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 140,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 158,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 179,
+              "col_start": 11,
+              "col_end": 25
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 192,
+              "col_start": 11,
+              "col_end": 25
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.CommandInfoV0": {
+          "count": 8,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 225,
+              "col_start": 11,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 250,
+              "col_start": 44,
+              "col_end": 57
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 51,
+              "col_start": 24,
+              "col_end": 37
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 56,
+              "col_start": 9,
+              "col_end": 22
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 61,
+              "col_start": 11,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 76,
+              "col_start": 28,
+              "col_end": 41
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 79,
+              "col_start": 16,
+              "col_end": 29
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 86,
+              "col_start": 12,
+              "col_end": 25
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.CompletionKindV0": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 133,
+              "col_start": 38,
+              "col_end": 54
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 192,
+              "col_start": 26,
+              "col_end": 42
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.KindV0": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 101,
+              "col_start": 37,
+              "col_end": 43
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 140,
+              "col_start": 26,
+              "col_end": 32
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.NameInfoV0": {
+          "count": 4,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 269,
+              "col_start": 26,
+              "col_end": 36
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 126,
+              "col_start": 48,
+              "col_end": 58
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 128,
+              "col_start": 24,
+              "col_end": 34
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 179,
+              "col_start": 26,
+              "col_end": 36
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ParsingStrategyV0": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 125,
+              "col_start": 39,
+              "col_end": 56
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 158,
+              "col_start": 26,
+              "col_end": 43
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ToolInfoV0": {
+          "count": 6,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 131,
+              "col_start": 14,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 133,
+              "col_start": 14,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Completions/CompletionsGenerator.swift",
+              "line": 135,
+              "col_start": 14,
+              "col_end": 24
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 19,
+              "col_start": 25,
+              "col_end": 35
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 26,
+              "col_start": 21,
+              "col_end": 31
+            },
+            {
+              "file": "Sources/ArgumentParser/Usage/DumpHelpGenerator.swift",
+              "line": 49,
+              "col_start": 11,
+              "col_end": 21
+            }
+          ]
+        }
+      },
+      "ArgumentParserTestHelpers": {
+        "ArgumentParserToolInfo": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParserTestHelpers/TestHelpers.swift",
+              "line": 13,
+              "col_start": 8,
+              "col_end": 30
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ToolInfoV0": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/ArgumentParserTestHelpers/TestHelpers.swift",
+              "line": 608,
+              "col_start": 12,
+              "col_end": 22
+            }
+          ]
+        }
+      },
+      "ArgumentParserToolInfoTests": {
+        "ArgumentParserToolInfo": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Tests/ArgumentParserToolInfoTests/ArgumentParserToolInfoTests.swift",
+              "line": 12,
+              "col_start": 8,
+              "col_end": 30
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ToolInfoV0": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Tests/ArgumentParserToolInfoTests/ArgumentParserToolInfoTests.swift",
+              "line": 76,
+              "col_start": 38,
+              "col_end": 48
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "ArgumentParserToolInfoTests",
+    "inward": {},
+    "outward": {
+      "ArgumentParserToolInfo": {
+        "ArgumentParserToolInfo": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Tests/ArgumentParserToolInfoTests/ArgumentParserToolInfoTests.swift",
+              "line": 12,
+              "col_start": 8,
+              "col_end": 30
+            }
+          ]
+        },
+        "ArgumentParserToolInfo.ToolInfoV0": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Tests/ArgumentParserToolInfoTests/ArgumentParserToolInfoTests.swift",
+              "line": 76,
+              "col_start": 38,
+              "col_end": 48
+            }
+          ]
+        }
+      }
+    }
+  }
+]

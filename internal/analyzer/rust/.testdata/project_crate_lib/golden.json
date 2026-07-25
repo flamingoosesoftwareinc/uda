@@ -1,0 +1,67 @@
+[
+  {
+    "package": "dual_target",
+    "inward": {},
+    "outward": {
+      "dual_target::util": {
+        "dual_target::util::helper": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 5,
+              "col_start": 5,
+              "col_end": 11
+            }
+          ]
+        }
+      },
+      "log": {
+        "log::info": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 6,
+              "col_start": 5,
+              "col_end": 9
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "dual_target::util",
+    "inward": {
+      "dual_target": {
+        "dual_target::util::helper": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 5,
+              "col_start": 5,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "log": {
+        "log::debug": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/util.rs",
+              "line": 4,
+              "col_start": 5,
+              "col_end": 10
+            }
+          ]
+        }
+      }
+    }
+  }
+]

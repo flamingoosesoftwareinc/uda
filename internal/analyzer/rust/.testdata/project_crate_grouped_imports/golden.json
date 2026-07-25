@@ -1,0 +1,161 @@
+[
+  {
+    "package": "myapp",
+    "inward": {},
+    "outward": {
+      "myapp::config": {
+        "myapp::config::Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 12,
+              "col_start": 16,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "myapp::handler::router": {
+        "myapp::handler::router::Router": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 14,
+              "col_start": 19,
+              "col_end": 30
+            }
+          ]
+        }
+      },
+      "tokio::runtime": {
+        "tokio::runtime::Runtime": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 13,
+              "col_start": 15,
+              "col_end": 32
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "myapp::config",
+    "inward": {
+      "myapp": {
+        "myapp::config::Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 12,
+              "col_start": 16,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "myapp::handler::router": {
+        "myapp::config::Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/handler/router.rs",
+              "line": 11,
+              "col_start": 33,
+              "col_end": 39
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "serde": {
+        "serde::Deserialize": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/config.rs",
+              "line": 3,
+              "col_start": 9,
+              "col_end": 33
+            }
+          ]
+        },
+        "serde::Serialize": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/config.rs",
+              "line": 3,
+              "col_start": 9,
+              "col_end": 33
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "myapp::handler",
+    "inward": {},
+    "outward": {}
+  },
+  {
+    "package": "myapp::handler::middleware",
+    "inward": {},
+    "outward": {
+      "serde": {
+        "serde::Serialize": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/handler/middleware.rs",
+              "line": 3,
+              "col_start": 9,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "myapp::handler::router",
+    "inward": {
+      "myapp": {
+        "myapp::handler::router::Router": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.rs",
+              "line": 14,
+              "col_start": 19,
+              "col_end": 30
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "myapp::config": {
+        "myapp::config::Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/handler/router.rs",
+              "line": 11,
+              "col_start": 33,
+              "col_end": 39
+            }
+          ]
+        }
+      }
+    }
+  }
+]

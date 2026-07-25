@@ -1,0 +1,11 @@
+[
+  {
+    "Position": {
+      "file": "main.go",
+      "line": 10,
+      "col_start": 10,
+      "col_end": 25
+    },
+    "DiffType": 0
+  }
+]

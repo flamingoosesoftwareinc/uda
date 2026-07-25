@@ -1,0 +1,25 @@
+[
+  {
+    "Package": "pkg/http",
+    "DiffType": 1,
+    "Symbols": [
+      {
+        "Name": "http.Client",
+        "DiffType": 1,
+        "PrevCount": 0,
+        "CurrCount": 1,
+        "Positions": [
+          {
+            "Position": {
+              "file": "server.go",
+              "line": 42,
+              "col_start": 0,
+              "col_end": 0
+            },
+            "DiffType": 1
+          }
+        ]
+      }
+    ]
+  }
+]
