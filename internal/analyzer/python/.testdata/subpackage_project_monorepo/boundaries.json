@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "api",
+    "Dirs": [
+      "packages/api/api"
+    ]
+  },
+  {
+    "Name": "core",
+    "Dirs": [
+      "packages/core/core"
+    ]
+  }
+]

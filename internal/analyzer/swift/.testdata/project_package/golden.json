@@ -1,0 +1,116 @@
+[
+  {
+    "package": "App",
+    "inward": {},
+    "outward": {
+      "Core": {
+        "Core": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/App/main.swift",
+              "line": 2,
+              "col_start": 8,
+              "col_end": 12
+            }
+          ]
+        },
+        "Core.UserService": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/App/main.swift",
+              "line": 4,
+              "col_start": 15,
+              "col_end": 26
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "Core",
+    "inward": {
+      "App": {
+        "Core": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/App/main.swift",
+              "line": 2,
+              "col_start": 8,
+              "col_end": 12
+            }
+          ]
+        },
+        "Core.UserService": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Sources/App/main.swift",
+              "line": 4,
+              "col_start": 15,
+              "col_end": 26
+            }
+          ]
+        }
+      },
+      "CoreTests": {
+        "Core": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Tests/CoreTests/UserTests.swift",
+              "line": 2,
+              "col_start": 8,
+              "col_end": 12
+            }
+          ]
+        },
+        "Core.User": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Tests/CoreTests/UserTests.swift",
+              "line": 5,
+              "col_start": 16,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "CoreTests",
+    "inward": {},
+    "outward": {
+      "Core": {
+        "Core": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Tests/CoreTests/UserTests.swift",
+              "line": 2,
+              "col_start": 8,
+              "col_end": 12
+            }
+          ]
+        },
+        "Core.User": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "Tests/CoreTests/UserTests.swift",
+              "line": 5,
+              "col_start": 16,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    }
+  }
+]

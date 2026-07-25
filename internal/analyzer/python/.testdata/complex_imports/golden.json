@@ -1,0 +1,146 @@
+[
+  {
+    "package": "webapp",
+    "inward": {},
+    "outward": {
+      "webapp.api": {}
+    }
+  },
+  {
+    "package": "webapp.api",
+    "inward": {
+      "webapp": {}
+    },
+    "outward": {
+      "webapp.api.routes": {}
+    }
+  },
+  {
+    "package": "webapp.api.routes",
+    "inward": {
+      "webapp.api": {}
+    },
+    "outward": {
+      "webapp.models": {
+        "webapp.models.User": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "webapp/api/routes.py",
+              "line": 7,
+              "col_start": 13,
+              "col_end": 17
+            },
+            {
+              "file": "webapp/api/routes.py",
+              "line": 7,
+              "col_start": 28,
+              "col_end": 32
+            }
+          ]
+        }
+      },
+      "webapp.services.auth": {
+        "webapp.services.auth.verify": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "webapp/api/routes.py",
+              "line": 6,
+              "col_start": 5,
+              "col_end": 15
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "webapp.models",
+    "inward": {
+      "webapp.api.routes": {
+        "webapp.models.User": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "webapp/api/routes.py",
+              "line": 7,
+              "col_start": 13,
+              "col_end": 17
+            },
+            {
+              "file": "webapp/api/routes.py",
+              "line": 7,
+              "col_start": 28,
+              "col_end": 32
+            }
+          ]
+        }
+      },
+      "webapp.services.auth": {}
+    },
+    "outward": {
+      "webapp.models.user": {}
+    }
+  },
+  {
+    "package": "webapp.models.user",
+    "inward": {
+      "webapp.models": {}
+    },
+    "outward": {
+      "json": {
+        "json": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "webapp/models/user.py",
+              "line": 9,
+              "col_start": 16,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "webapp.services",
+    "inward": {},
+    "outward": {}
+  },
+  {
+    "package": "webapp.services.auth",
+    "inward": {
+      "webapp.api.routes": {
+        "webapp.services.auth.verify": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "webapp/api/routes.py",
+              "line": 6,
+              "col_start": 5,
+              "col_end": 15
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "hashlib": {
+        "hashlib": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "webapp/services/auth.py",
+              "line": 10,
+              "col_start": 12,
+              "col_end": 19
+            }
+          ]
+        }
+      },
+      "webapp.models": {}
+    }
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "go.mod",
+    "content": "module example.com/test\n\ngo 1.21\n"
+  },
+  {
+    "path": "main.go",
+    "content": "package main\n\nimport \"example.com/test/pkg/greeter\"\n\nfunc main() {\n\t_ = greeter.Hello()\n}\n"
+  },
+  {
+    "path": "pkg/greeter/greeter.go",
+    "content": "package greeter\n\nfunc Hello() string {\n\treturn \"hello\"\n}\n"
+  }
+]

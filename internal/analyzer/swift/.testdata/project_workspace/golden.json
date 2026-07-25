@@ -1,0 +1,120 @@
+[
+  {
+    "package": "App",
+    "inward": {},
+    "outward": {
+      "Core": {
+        "Core": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "App/Sources/App/Routes.swift",
+              "line": 2,
+              "col_start": 8,
+              "col_end": 12
+            },
+            {
+              "file": "App/Sources/App/main.swift",
+              "line": 2,
+              "col_start": 8,
+              "col_end": 12
+            }
+          ]
+        },
+        "Core.APIService": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "App/Sources/App/Routes.swift",
+              "line": 4,
+              "col_start": 27,
+              "col_end": 37
+            },
+            {
+              "file": "App/Sources/App/main.swift",
+              "line": 4,
+              "col_start": 15,
+              "col_end": 25
+            }
+          ]
+        },
+        "Core.Request": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "App/Sources/App/Routes.swift",
+              "line": 5,
+              "col_start": 19,
+              "col_end": 26
+            },
+            {
+              "file": "App/Sources/App/main.swift",
+              "line": 5,
+              "col_start": 15,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "Core",
+    "inward": {
+      "App": {
+        "Core": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "App/Sources/App/Routes.swift",
+              "line": 2,
+              "col_start": 8,
+              "col_end": 12
+            },
+            {
+              "file": "App/Sources/App/main.swift",
+              "line": 2,
+              "col_start": 8,
+              "col_end": 12
+            }
+          ]
+        },
+        "Core.APIService": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "App/Sources/App/Routes.swift",
+              "line": 4,
+              "col_start": 27,
+              "col_end": 37
+            },
+            {
+              "file": "App/Sources/App/main.swift",
+              "line": 4,
+              "col_start": 15,
+              "col_end": 25
+            }
+          ]
+        },
+        "Core.Request": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "App/Sources/App/Routes.swift",
+              "line": 5,
+              "col_start": 19,
+              "col_end": 26
+            },
+            {
+              "file": "App/Sources/App/main.swift",
+              "line": 5,
+              "col_start": 15,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  }
+]

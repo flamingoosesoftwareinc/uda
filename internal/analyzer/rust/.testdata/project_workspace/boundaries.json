@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "app",
+    "Dirs": [
+      "app/src"
+    ]
+  },
+  {
+    "Name": "app::routes",
+    "Dirs": [
+      "app/src"
+    ]
+  },
+  {
+    "Name": "core",
+    "Dirs": [
+      "core/src"
+    ]
+  },
+  {
+    "Name": "core::model",
+    "Dirs": [
+      "core/src"
+    ]
+  },
+  {
+    "Name": "core::service",
+    "Dirs": [
+      "core/src"
+    ]
+  }
+]

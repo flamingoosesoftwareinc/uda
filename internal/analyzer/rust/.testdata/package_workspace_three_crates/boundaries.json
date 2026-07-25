@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "api",
+    "Dirs": [
+      "api/src"
+    ]
+  },
+  {
+    "Name": "core",
+    "Dirs": [
+      "core/src"
+    ]
+  },
+  {
+    "Name": "db",
+    "Dirs": [
+      "db/src"
+    ]
+  }
+]

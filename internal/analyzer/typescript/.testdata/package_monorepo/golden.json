@@ -1,0 +1,40 @@
+[
+  {
+    "package": "@myorg/core",
+    "inward": {
+      "@myorg/ui": {
+        "core.formatDate": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "packages/ui/src/App.tsx",
+              "line": 5,
+              "col_start": 13,
+              "col_end": 23
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "@myorg/ui",
+    "inward": {},
+    "outward": {
+      "@myorg/core": {
+        "core.formatDate": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "packages/ui/src/App.tsx",
+              "line": 5,
+              "col_start": 13,
+              "col_end": 23
+            }
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,15 @@
+Comparing abc1234 → def5678
+
+New dependencies:
+  internal/core → internal/http
+    + http.Client
+        core/server.go:42
+    + http.Handler
+        core/server.go:58
+
+[1;97mSummary[m
+╭─────────────────┬─────────────┬────────┬─────────╮
+│     [1mPACKAGE[m     │ [1mINSTABILITY[m │ [1mINWARD[m │ [1mOUTWARD[m │
+├─────────────────┼─────────────┼────────┼─────────┤
+│ ~ internal/core │ 1.00 → 1.00 │ 0 → 0  │ 1 → 2   │
+╰─────────────────┴─────────────┴────────┴─────────╯

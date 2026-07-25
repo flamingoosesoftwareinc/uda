@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "myns.core",
+    "Dirs": [
+      "myns"
+    ]
+  },
+  {
+    "Name": "myns.utils",
+    "Dirs": [
+      "myns"
+    ]
+  }
+]

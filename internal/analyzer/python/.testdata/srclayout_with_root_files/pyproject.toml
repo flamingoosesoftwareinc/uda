@@ -1,0 +1,8 @@
+[project]
+name = "hypothesis-jsonschema"
+version = "0.1.0"
+dependencies = []
+
+[tool.setuptools]
+packages = ["hypothesis_jsonschema"]
+package-dir = {"" = "src"}

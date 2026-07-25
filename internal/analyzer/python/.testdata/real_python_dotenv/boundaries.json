@@ -1,0 +1,50 @@
+[
+  {
+    "Name": "dotenv",
+    "Dirs": [
+      "src/dotenv"
+    ]
+  },
+  {
+    "Name": "dotenv.__main__",
+    "Dirs": [
+      "src/dotenv"
+    ]
+  },
+  {
+    "Name": "dotenv.cli",
+    "Dirs": [
+      "src/dotenv"
+    ]
+  },
+  {
+    "Name": "dotenv.ipython",
+    "Dirs": [
+      "src/dotenv"
+    ]
+  },
+  {
+    "Name": "dotenv.main",
+    "Dirs": [
+      "src/dotenv"
+    ]
+  },
+  {
+    "Name": "dotenv.parser",
+    "Dirs": [
+      "src/dotenv"
+    ]
+  },
+  {
+    "Name": "dotenv.variables",
+    "Dirs": [
+      "src/dotenv"
+    ]
+  },
+  {
+    "Name": "dotenv.version",
+    "Dirs": [
+      "src/dotenv"
+    ]
+  }
+]

@@ -1,0 +1,78 @@
+[
+  {
+    "package": "mypackage",
+    "inward": {},
+    "outward": {
+      "mypackage.config": {},
+      "mypackage.handler": {}
+    }
+  },
+  {
+    "package": "mypackage.config",
+    "inward": {
+      "mypackage": {},
+      "mypackage.handler": {
+        "mypackage.config.Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "mypackage/handler.py",
+              "line": 4,
+              "col_start": 17,
+              "col_end": 23
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "json": {
+        "json": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "mypackage/config.py",
+              "line": 8,
+              "col_start": 16,
+              "col_end": 20
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "mypackage.handler",
+    "inward": {
+      "mypackage": {}
+    },
+    "outward": {
+      "mypackage.config": {
+        "mypackage.config.Config": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "mypackage/handler.py",
+              "line": 4,
+              "col_start": 17,
+              "col_end": 23
+            }
+          ]
+        }
+      },
+      "requests": {
+        "requests": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "mypackage/handler.py",
+              "line": 5,
+              "col_start": 16,
+              "col_end": 24
+            }
+          ]
+        }
+      }
+    }
+  }
+]

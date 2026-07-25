@@ -1,0 +1,47 @@
+[
+  {
+    "Position": {
+      "file": "main.go",
+      "line": 10,
+      "col_start": 5,
+      "col_end": 15
+    },
+    "DiffType": 0
+  },
+  {
+    "Position": {
+      "file": "main.go",
+      "line": 30,
+      "col_start": 1,
+      "col_end": 10
+    },
+    "DiffType": 1
+  },
+  {
+    "Position": {
+      "file": "new.go",
+      "line": 1,
+      "col_start": 1,
+      "col_end": 5
+    },
+    "DiffType": 1
+  },
+  {
+    "Position": {
+      "file": "main.go",
+      "line": 20,
+      "col_start": 1,
+      "col_end": 10
+    },
+    "DiffType": 2
+  },
+  {
+    "Position": {
+      "file": "other.go",
+      "line": 5,
+      "col_start": 1,
+      "col_end": 10
+    },
+    "DiffType": 2
+  }
+]

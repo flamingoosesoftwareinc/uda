@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "plugins.auth.handler",
+    "Dirs": [
+      "plugins/auth"
+    ]
+  },
+  {
+    "Name": "plugins.db.connection",
+    "Dirs": [
+      "plugins/db"
+    ]
+  },
+  {
+    "Name": "plugins.utils.helpers",
+    "Dirs": [
+      "plugins/utils"
+    ]
+  }
+]

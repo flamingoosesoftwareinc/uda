@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "myproject",
+    "Dirs": [
+      "src/myproject"
+    ]
+  },
+  {
+    "Name": "myproject.config",
+    "Dirs": [
+      "src/myproject"
+    ]
+  },
+  {
+    "Name": "myproject.handlers",
+    "Dirs": [
+      "src/myproject/handlers"
+    ]
+  },
+  {
+    "Name": "myproject.handlers.api",
+    "Dirs": [
+      "src/myproject/handlers"
+    ]
+  },
+  {
+    "Name": "myproject.handlers.auth",
+    "Dirs": [
+      "src/myproject/handlers"
+    ]
+  },
+  {
+    "Name": "myproject.main",
+    "Dirs": [
+      "src/myproject"
+    ]
+  }
+]

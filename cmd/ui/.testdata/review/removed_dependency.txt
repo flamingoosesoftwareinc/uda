@@ -1,0 +1,13 @@
+Comparing abc1234 → def5678
+
+Removed dependencies:
+  internal/api → internal/legacy
+    - legacy.Transform
+        api/handler.go:12
+
+[1;97mSummary[m
+╭────────────────┬─────────────┬────────┬─────────╮
+│    [1mPACKAGE[m     │ [1mINSTABILITY[m │ [1mINWARD[m │ [1mOUTWARD[m │
+├────────────────┼─────────────┼────────┼─────────┤
+│ ~ internal/api │ 1.00 → 1.00 │ 0 → 0  │ 2 → 1   │
+╰────────────────┴─────────────┴────────┴─────────╯

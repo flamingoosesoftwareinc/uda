@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "example.com/project_gomod/cmd",
+    "Dirs": [
+      "cmd"
+    ]
+  },
+  {
+    "Name": "example.com/project_gomod/internal/bar",
+    "Dirs": [
+      "internal/bar"
+    ]
+  },
+  {
+    "Name": "example.com/project_gomod/internal/bar/baz",
+    "Dirs": [
+      "internal/bar/baz"
+    ]
+  },
+  {
+    "Name": "example.com/project_gomod/internal/foo",
+    "Dirs": [
+      "internal/foo"
+    ]
+  },
+  {
+    "Name": "example.com/project_gomod/main",
+    "Dirs": [
+      "."
+    ]
+  }
+]

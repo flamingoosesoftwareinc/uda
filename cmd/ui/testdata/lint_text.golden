@@ -1,0 +1,5 @@
+go: forbidden internal/domain -> internal/adapter/http (rule: internal/domain -> internal/adapter/**)
+go: stable    internal/domain -> internal/cache (rule: internal/domain)
+go: unlisted  cmd -> internal/cache
+go: pending   cmd -> internal/lint
+typescript: unlisted  src/api -> src/core

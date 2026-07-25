@@ -1,0 +1,82 @@
+[
+  {
+    "Package": "internal/cache",
+    "DiffType": 1,
+    "InwardDiff": null,
+    "OutwardDiff": [
+      {
+        "Package": "internal/db",
+        "DiffType": 1,
+        "Symbols": [
+          {
+            "Name": "db.Pool",
+            "DiffType": 1,
+            "PrevCount": 0,
+            "CurrCount": 3,
+            "Positions": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Package": "internal/core",
+    "DiffType": 0,
+    "InwardDiff": null,
+    "OutwardDiff": [
+      {
+        "Package": "internal/config",
+        "DiffType": 0,
+        "Symbols": [
+          {
+            "Name": "config.Debug",
+            "DiffType": 2,
+            "PrevCount": 1,
+            "CurrCount": 0,
+            "Positions": null
+          },
+          {
+            "Name": "config.Timeout",
+            "DiffType": 1,
+            "PrevCount": 0,
+            "CurrCount": 2,
+            "Positions": null
+          }
+        ]
+      },
+      {
+        "Package": "internal/http",
+        "DiffType": 1,
+        "Symbols": [
+          {
+            "Name": "http.Client",
+            "DiffType": 1,
+            "PrevCount": 0,
+            "CurrCount": 1,
+            "Positions": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Package": "internal/oldutil",
+    "DiffType": 2,
+    "InwardDiff": null,
+    "OutwardDiff": [
+      {
+        "Package": "internal/core",
+        "DiffType": 2,
+        "Symbols": [
+          {
+            "Name": "core.Helper",
+            "DiffType": 2,
+            "PrevCount": 1,
+            "CurrCount": 0,
+            "Positions": null
+          }
+        ]
+      }
+    ]
+  }
+]

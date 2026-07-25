@@ -1,0 +1,14 @@
+[
+  {
+    "Name": "myapp",
+    "Dirs": [
+      "myapp"
+    ]
+  },
+  {
+    "Name": "myapp.utils",
+    "Dirs": [
+      "myapp"
+    ]
+  }
+]

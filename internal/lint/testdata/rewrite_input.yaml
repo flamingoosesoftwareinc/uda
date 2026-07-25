@@ -1,0 +1,26 @@
+# repo analyzer defaults — must survive lint rewrites untouched
+since: 90d
+target-precision: 0.05
+
+lint:
+  # policed packages only; generated blocks below
+  exclude:
+    - "poc/**"
+  go:
+    roles:
+      stable:
+        - internal/domain # the core stays dependency-light
+    forbid:
+      - from: internal/domain
+        to: internal/adapter/**
+    allowed:
+      - cmd -> internal/analyzer
+    pending: []
+  typescript:
+    allowed:
+      - src/api -> src/core
+    pending: []
+
+advisory:
+  coupling:
+    min-correlation: 0.6

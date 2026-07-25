@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "project_crate",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "project_crate::config",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "project_crate::handler",
+    "Dirs": [
+      "src"
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+[project]
+name = "python-dotenv"
+version = "1.2.1"
+dependencies = []
+
+[project.optional-dependencies]
+cli = [
+    "click>=5.0",
+]
+
+[tool.setuptools]
+packages = ["dotenv"]
+package-dir = {"" = "src"}

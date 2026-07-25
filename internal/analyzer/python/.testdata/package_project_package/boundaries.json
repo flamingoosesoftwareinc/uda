@@ -1,0 +1,9 @@
+[
+  {
+    "Name": "myproject",
+    "Dirs": [
+      "src/myproject",
+      "src/myproject/handlers"
+    ]
+  }
+]

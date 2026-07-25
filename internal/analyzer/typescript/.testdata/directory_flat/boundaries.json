@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "my-app/src",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "my-app/src/models",
+    "Dirs": [
+      "src/models"
+    ]
+  },
+  {
+    "Name": "my-app/src/services",
+    "Dirs": [
+      "src/services"
+    ]
+  },
+  {
+    "Name": "my-app/src/utils",
+    "Dirs": [
+      "src/utils"
+    ]
+  }
+]

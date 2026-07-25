@@ -1,0 +1,135 @@
+[
+  {
+    "package": "api",
+    "inward": {},
+    "outward": {
+      "core": {
+        "core::models::User": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "api/src/main.rs",
+              "line": 5,
+              "col_start": 17,
+              "col_end": 21
+            },
+            {
+              "file": "api/src/main.rs",
+              "line": 5,
+              "col_start": 17,
+              "col_end": 21
+            }
+          ]
+        }
+      },
+      "db": {
+        "db::connection::Pool": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "api/src/main.rs",
+              "line": 6,
+              "col_start": 17,
+              "col_end": 26
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "core",
+    "inward": {
+      "api": {
+        "core::models::User": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "api/src/main.rs",
+              "line": 5,
+              "col_start": 17,
+              "col_end": 21
+            },
+            {
+              "file": "api/src/main.rs",
+              "line": 5,
+              "col_start": 17,
+              "col_end": 21
+            }
+          ]
+        }
+      },
+      "db": {
+        "core::models::User": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "db/src/connection.rs",
+              "line": 10,
+              "col_start": 31,
+              "col_end": 35
+            },
+            {
+              "file": "db/src/connection.rs",
+              "line": 11,
+              "col_start": 9,
+              "col_end": 13
+            },
+            {
+              "file": "db/src/connection.rs",
+              "line": 11,
+              "col_start": 9,
+              "col_end": 13
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "db",
+    "inward": {
+      "api": {
+        "db::connection::Pool": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "api/src/main.rs",
+              "line": 6,
+              "col_start": 17,
+              "col_end": 26
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "core": {
+        "core::models::User": {
+          "count": 3,
+          "positions": [
+            {
+              "file": "db/src/connection.rs",
+              "line": 10,
+              "col_start": 31,
+              "col_end": 35
+            },
+            {
+              "file": "db/src/connection.rs",
+              "line": 11,
+              "col_start": 9,
+              "col_end": 13
+            },
+            {
+              "file": "db/src/connection.rs",
+              "line": 11,
+              "col_start": 9,
+              "col_end": 13
+            }
+          ]
+        }
+      }
+    }
+  }
+]

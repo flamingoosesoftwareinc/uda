@@ -1,0 +1,132 @@
+[
+  {
+    "package": "my-app",
+    "inward": {},
+    "outward": {
+      "my-app/src/features/auth": {
+        "auth.login": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.ts",
+              "line": 4,
+              "col_start": 1,
+              "col_end": 6
+            }
+          ]
+        }
+      },
+      "my-app/src/features/users": {
+        "users.getUser": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.ts",
+              "line": 5,
+              "col_start": 14,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "my-app/src/features/auth",
+    "inward": {
+      "my-app": {
+        "auth.login": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.ts",
+              "line": 4,
+              "col_start": 1,
+              "col_end": 6
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "my-app/src/shared": {
+        "shared.validate": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/features/auth/login.ts",
+              "line": 4,
+              "col_start": 10,
+              "col_end": 18
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "my-app/src/features/users",
+    "inward": {
+      "my-app": {
+        "users.getUser": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/main.ts",
+              "line": 5,
+              "col_start": 14,
+              "col_end": 21
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "my-app/src/shared": {
+        "shared.validate": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/features/users/user-service.ts",
+              "line": 4,
+              "col_start": 8,
+              "col_end": 16
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "my-app/src/shared",
+    "inward": {
+      "my-app/src/features/auth": {
+        "shared.validate": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/features/auth/login.ts",
+              "line": 4,
+              "col_start": 10,
+              "col_end": 18
+            }
+          ]
+        }
+      },
+      "my-app/src/features/users": {
+        "shared.validate": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/features/users/user-service.ts",
+              "line": 4,
+              "col_start": 8,
+              "col_end": 16
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  }
+]

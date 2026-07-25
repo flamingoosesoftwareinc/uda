@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "nested_use_test",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "nested_use_test::collections",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "nested_use_test::io",
+    "Dirs": [
+      "src"
+    ]
+  }
+]

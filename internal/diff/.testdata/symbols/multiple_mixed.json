@@ -1,0 +1,62 @@
+[
+  {
+    "Name": "fmt.Errorf",
+    "DiffType": 0,
+    "PrevCount": 1,
+    "CurrCount": 1,
+    "Positions": [
+      {
+        "Position": {
+          "file": "a.go",
+          "line": 1,
+          "col_start": 0,
+          "col_end": 0
+        },
+        "DiffType": 0
+      }
+    ]
+  },
+  {
+    "Name": "fmt.Println",
+    "DiffType": 2,
+    "PrevCount": 2,
+    "CurrCount": 0,
+    "Positions": [
+      {
+        "Position": {
+          "file": "a.go",
+          "line": 2,
+          "col_start": 0,
+          "col_end": 0
+        },
+        "DiffType": 2
+      },
+      {
+        "Position": {
+          "file": "a.go",
+          "line": 3,
+          "col_start": 0,
+          "col_end": 0
+        },
+        "DiffType": 2
+      }
+    ]
+  },
+  {
+    "Name": "fmt.Sprintf",
+    "DiffType": 1,
+    "PrevCount": 0,
+    "CurrCount": 1,
+    "Positions": [
+      {
+        "Position": {
+          "file": "b.go",
+          "line": 5,
+          "col_start": 0,
+          "col_end": 0
+        },
+        "DiffType": 1
+      }
+    ]
+  }
+]
