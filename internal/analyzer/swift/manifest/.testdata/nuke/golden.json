@@ -1,0 +1,35 @@
+{
+  "name": "Nuke",
+  "targets": [
+    {
+      "name": "Nuke",
+      "path": "Sources/Nuke",
+      "is_test": false,
+      "dependencies": null
+    },
+    {
+      "name": "NukeUI",
+      "path": "Sources/NukeUI",
+      "is_test": false,
+      "dependencies": [
+        "Nuke"
+      ]
+    },
+    {
+      "name": "NukeVideo",
+      "path": "Sources/NukeVideo",
+      "is_test": false,
+      "dependencies": [
+        "Nuke"
+      ]
+    },
+    {
+      "name": "NukeExtensions",
+      "path": "Sources/NukeExtensions",
+      "is_test": false,
+      "dependencies": [
+        "Nuke"
+      ]
+    }
+  ]
+}

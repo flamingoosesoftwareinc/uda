@@ -1,0 +1,23 @@
+[7m  [m[1;7mGo[m[7m  [m
+[1;95mexample.com/project/main[m                                                        
+                                                                                
+Inward: 0  Outward: 2  Instability: 1.000                                       
+                                                                                
+[1;96mInward Dependencies[m                                                             
+[90m  (none)[m                                                                        
+[90m[m                                                                                
+[1;96mOutward Dependencies[m                                                            
+[90m  example.com/project/cmd[m                                                       
+[90m    cmd.Execute (x2) ▾[m                                                          
+[7m      main.go:10:2-15[m                                                           
+[90m      main.go:22:3-16[m                                                           
+[90m  fmt[m                                                                           
+[90m    fmt.Println (x3) ▸[m                                                          
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+[90mesc/backspace: back | j/k: navigate | space: expand | enter: open in editor | q: quit[m

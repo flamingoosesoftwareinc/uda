@@ -1,0 +1,138 @@
+[
+  {
+    "package": "example.com/project_gomod/cmd",
+    "inward": {
+      "example.com/project_gomod/main": {
+        "cmd.Execute": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "main.go",
+              "line": 8,
+              "col_start": 2,
+              "col_end": 13
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "example.com/project_gomod/internal/bar": {
+        "bar.DoBar": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cmd/blah.go",
+              "line": 13,
+              "col_start": 2,
+              "col_end": 11
+            }
+          ]
+        }
+      },
+      "example.com/project_gomod/internal/foo": {
+        "foo.DoFoo": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cmd/blah.go",
+              "line": 12,
+              "col_start": 2,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "example.com/project_gomod/internal/bar",
+    "inward": {
+      "example.com/project_gomod/cmd": {
+        "bar.DoBar": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cmd/blah.go",
+              "line": 13,
+              "col_start": 2,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "example.com/project_gomod/internal/bar/baz": {
+        "baz.DoBaz": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "internal/bar/bar.go",
+              "line": 11,
+              "col_start": 2,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "example.com/project_gomod/internal/bar/baz",
+    "inward": {
+      "example.com/project_gomod/internal/bar": {
+        "baz.DoBaz": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "internal/bar/bar.go",
+              "line": 11,
+              "col_start": 2,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "example.com/project_gomod/internal/foo",
+    "inward": {
+      "example.com/project_gomod/cmd": {
+        "foo.DoFoo": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "cmd/blah.go",
+              "line": 12,
+              "col_start": 2,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "example.com/project_gomod/main",
+    "inward": {},
+    "outward": {
+      "example.com/project_gomod/cmd": {
+        "cmd.Execute": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "main.go",
+              "line": 8,
+              "col_start": 2,
+              "col_end": 13
+            }
+          ]
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "casesplit",
+    "Dirs": [
+      "casesplit/src"
+    ]
+  },
+  {
+    "Name": "iso-cli",
+    "Dirs": [
+      "iso-cli/src"
+    ]
+  },
+  {
+    "Name": "iso-model",
+    "Dirs": [
+      "iso-model/src"
+    ]
+  },
+  {
+    "Name": "renamed-lib",
+    "Dirs": [
+      "renamed-lib/src"
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+# Ignore downloaded benchmark repositories
+# These are large codebases fetched on-demand for benchmarking
+
+# Main benchmark project (currently ripgrep)
+project_mono/
+
+# Alternative benchmark projects (for future use)
+ripgrep/
+tokio/
+rust-analyzer/

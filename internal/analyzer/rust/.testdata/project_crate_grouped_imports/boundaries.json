@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "myapp",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "myapp::config",
+    "Dirs": [
+      "src"
+    ]
+  },
+  {
+    "Name": "myapp::handler",
+    "Dirs": [
+      "src/handler"
+    ]
+  },
+  {
+    "Name": "myapp::handler::middleware",
+    "Dirs": [
+      "src/handler"
+    ]
+  },
+  {
+    "Name": "myapp::handler::router",
+    "Dirs": [
+      "src/handler"
+    ]
+  }
+]

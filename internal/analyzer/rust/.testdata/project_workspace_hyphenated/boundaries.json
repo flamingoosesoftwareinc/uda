@@ -1,0 +1,44 @@
+[
+  {
+    "Name": "casesplit",
+    "Dirs": [
+      "casesplit/src"
+    ]
+  },
+  {
+    "Name": "casesplit::tokens",
+    "Dirs": [
+      "casesplit/src"
+    ]
+  },
+  {
+    "Name": "iso-cli",
+    "Dirs": [
+      "iso-cli/src"
+    ]
+  },
+  {
+    "Name": "iso-model",
+    "Dirs": [
+      "iso-model/src"
+    ]
+  },
+  {
+    "Name": "iso-model::model",
+    "Dirs": [
+      "iso-model/src"
+    ]
+  },
+  {
+    "Name": "renamed-lib",
+    "Dirs": [
+      "renamed-lib/src"
+    ]
+  },
+  {
+    "Name": "renamed-lib::report",
+    "Dirs": [
+      "renamed-lib/src"
+    ]
+  }
+]

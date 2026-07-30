@@ -1,0 +1,22 @@
+[
+  {
+    "Package": "internal/cache",
+    "DiffType": 1,
+    "InwardDiff": null,
+    "OutwardDiff": [
+      {
+        "Package": "internal/db",
+        "DiffType": 1,
+        "Symbols": [
+          {
+            "Name": "db.Pool",
+            "DiffType": 1,
+            "PrevCount": 0,
+            "CurrCount": 3,
+            "Positions": null
+          }
+        ]
+      }
+    ]
+  }
+]

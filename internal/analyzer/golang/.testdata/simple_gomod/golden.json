@@ -1,0 +1,21 @@
+[
+  {
+    "package": "example.com/simple_gomod/main",
+    "inward": {},
+    "outward": {
+      "github.com/example/widget": {
+        "widget.Do": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "main.go",
+              "line": 11,
+              "col_start": 2,
+              "col_end": 11
+            }
+          ]
+        }
+      }
+    }
+  }
+]

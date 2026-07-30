@@ -1,0 +1,2 @@
+[workspace]
+members = ["iso-model", "iso-cli", "casesplit", "renamed-lib"]

@@ -1,0 +1,95 @@
+groups:
+  # ==========================================================================
+  # Analyzer lifecycle
+  # ==========================================================================
+  - id: registry.uda.analyzer
+    type: attribute_group
+    brief: Analyzer execution lifecycle events
+    attributes:
+      - id: uda.analyzer.language
+        type: string
+        stability: stable
+        brief: Language being analyzed
+        examples: ["Go", "Python", "Rust", "Swift", "TypeScript"]
+        requirement_level: required
+
+      - id: uda.analyzer.file
+        type: string
+        stability: stable
+        brief: File currently being analyzed
+        examples: ["src/main.py", "internal/analyzer/golang/go.go"]
+
+      - id: uda.analyzer.filepaths
+        type: string[]
+        stability: stable
+        brief: Discovered config files (go.mod, Cargo.toml, pyproject.toml, Package.swift, package.json)
+        examples: [["go.mod", "lib/go.mod"]]
+
+      - id: uda.analyzer.packages
+        type: string[]
+        stability: stable
+        brief: Identified package/module names
+        examples: [["github.com/user/module", "github.com/user/lib"]]
+
+      - id: uda.analyzer.strategy
+        type: string
+        stability: stable
+        brief: Boundary detection strategy in use
+        examples: ["package", "module", "subpackage", "barrel", "directory"]
+
+  # ==========================================================================
+  # Error context (slogerr carrier fields)
+  # ==========================================================================
+  - id: registry.uda.error
+    type: attribute_group
+    brief: Structured error context for log correlation
+    attributes:
+      - id: uda.error.message
+        type: string
+        stability: stable
+        brief: Human-readable error description
+        examples: ["failed to parse Cargo.toml", "manifest parse failed"]
+        requirement_level: required
+
+      - id: uda.error.path
+        type: string
+        stability: stable
+        brief: File path where the error occurred
+        examples: ["Cargo.toml", "Package.swift", "pyproject.toml"]
+
+      - id: uda.error.phase
+        type: string
+        stability: stable
+        brief: Analysis phase where the error occurred
+        examples: ["manifest", "discovery", "parse", "resolve"]
+
+  # ==========================================================================
+  # Parse diagnostics (debug level)
+  # ==========================================================================
+  - id: registry.uda.parse
+    type: attribute_group
+    brief: Tree-sitter parse diagnostic fields
+    attributes:
+      - id: uda.parse.import
+        type: string
+        stability: stable
+        brief: Detected import path
+        examples: ["github.com/user/lib", "Foundation", "os"]
+
+      - id: uda.parse.expression
+        type: string
+        stability: stable
+        brief: Detected usage expression
+        examples: ["pkg.Function", "Config"]
+
+      - id: uda.parse.alias
+        type: string
+        stability: stable
+        brief: Import alias
+        examples: ["np", "pd"]
+
+      - id: uda.parse.module
+        type: string
+        stability: stable
+        brief: Resolved module path
+        examples: ["myapp.handlers.auth", "github.com/user/module/internal/pkg"]

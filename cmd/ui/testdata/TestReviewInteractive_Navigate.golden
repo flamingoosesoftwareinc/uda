@@ -1,0 +1,23 @@
+[7m  [m[1;7mabc1234 → def5678[m[7m  [m
+ [1mPACKAGE                               [m  [1mINSTABILITY    [m  [1mINWARD    [m  [1mOUTWARD    [m 
+[90m────────────────────────────────────────[m[90m─────────────────[m[90m────────────[m[90m─────────────[m
+ + internal/cache                        1.000            0           2         
+[1;7;38;5;212m ~ internal/core                         0.286 → 0.444    5 → 5       2 → 4     [m
+ - internal/oldutil                      (removed)                              
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+                                                                                
+[90mj/k: navigate | enter: details | q: quit[m

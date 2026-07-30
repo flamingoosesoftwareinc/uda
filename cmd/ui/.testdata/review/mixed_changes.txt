@@ -1,0 +1,30 @@
+Comparing abc1234 → def5678
+
+New dependencies:
+  internal/cache → internal/db
+    + db.Pool
+  internal/core → internal/http
+    + http.Client
+        core/server.go:42
+
+Changed dependencies:
+  internal/core → internal/config
+    + config.Timeout
+        core/server.go:30
+    - config.Debug
+        core/app.go:18
+
+New packages:
+  internal/cache  inward 0  outward 2
+
+Removed packages:
+  internal/oldutil
+
+[1;97mSummary[m
+╭────────────────────┬─────────────┬────────┬─────────╮
+│      [1mPACKAGE[m       │ [1mINSTABILITY[m │ [1mINWARD[m │ [1mOUTWARD[m │
+├────────────────────┼─────────────┼────────┼─────────┤
+│ + internal/cache   │ 1.00        │ 0      │ 2       │
+│ ~ internal/core    │ 0.29 → 0.44 │ 5 → 5  │ 2 → 4   │
+│ - internal/oldutil │ (removed)   │        │         │
+╰────────────────────┴─────────────┴────────┴─────────╯

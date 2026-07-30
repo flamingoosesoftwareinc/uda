@@ -1,0 +1,188 @@
+[
+  {
+    "package": "myproject",
+    "inward": {},
+    "outward": {}
+  },
+  {
+    "package": "myproject.config",
+    "inward": {
+      "myproject.handlers.api": {
+        "myproject.config.AppConfig": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/handlers/api.py",
+              "line": 5,
+              "col_start": 32,
+              "col_end": 41
+            }
+          ]
+        }
+      },
+      "myproject.handlers.auth": {
+        "myproject.config.AppConfig": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/handlers/auth.py",
+              "line": 4,
+              "col_start": 32,
+              "col_end": 41
+            }
+          ]
+        }
+      },
+      "myproject.main": {
+        "myproject.config.AppConfig": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/main.py",
+              "line": 5,
+              "col_start": 14,
+              "col_end": 23
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "pydantic": {
+        "pydantic.BaseModel": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/config.py",
+              "line": 3,
+              "col_start": 17,
+              "col_end": 26
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "myproject.handlers",
+    "inward": {
+      "myproject.main": {
+        "myproject.handlers.APIHandler": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/main.py",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 25
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "myproject.handlers.api": {},
+      "myproject.handlers.auth": {}
+    }
+  },
+  {
+    "package": "myproject.handlers.api",
+    "inward": {
+      "myproject.handlers": {}
+    },
+    "outward": {
+      "myproject.config": {
+        "myproject.config.AppConfig": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/handlers/api.py",
+              "line": 5,
+              "col_start": 32,
+              "col_end": 41
+            }
+          ]
+        }
+      },
+      "myproject.handlers.auth": {
+        "myproject.handlers.auth.AuthHandler": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/handlers/api.py",
+              "line": 7,
+              "col_start": 21,
+              "col_end": 32
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "myproject.handlers.auth",
+    "inward": {
+      "myproject.handlers": {},
+      "myproject.handlers.api": {
+        "myproject.handlers.auth.AuthHandler": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/handlers/api.py",
+              "line": 7,
+              "col_start": 21,
+              "col_end": 32
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "myproject.config": {
+        "myproject.config.AppConfig": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/handlers/auth.py",
+              "line": 4,
+              "col_start": 32,
+              "col_end": 41
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "myproject.main",
+    "inward": {},
+    "outward": {
+      "myproject.config": {
+        "myproject.config.AppConfig": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/main.py",
+              "line": 5,
+              "col_start": 14,
+              "col_end": 23
+            }
+          ]
+        }
+      },
+      "myproject.handlers": {
+        "myproject.handlers.APIHandler": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "src/myproject/main.py",
+              "line": 6,
+              "col_start": 15,
+              "col_end": 25
+            }
+          ]
+        }
+      }
+    }
+  }
+]

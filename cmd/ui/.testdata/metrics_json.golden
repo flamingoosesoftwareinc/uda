@@ -1,0 +1,31 @@
+[
+  {
+    "language": "Go",
+    "metrics": [
+      {
+        "package": "example.com/project/main",
+        "inward": 0,
+        "outward": 1,
+        "instability": 1
+      },
+      {
+        "package": "example.com/project/cmd",
+        "inward": 1,
+        "outward": 3,
+        "instability": 0.75
+      },
+      {
+        "package": "example.com/project/pkg/foo",
+        "inward": 1,
+        "outward": 1,
+        "instability": 0.5
+      },
+      {
+        "package": "example.com/project/pkg/bar",
+        "inward": 1,
+        "outward": 1,
+        "instability": 0.5
+      }
+    ]
+  }
+]

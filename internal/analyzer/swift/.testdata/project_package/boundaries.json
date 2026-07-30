@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "App",
+    "Dirs": [
+      "Sources/App"
+    ]
+  },
+  {
+    "Name": "Core",
+    "Dirs": [
+      "Sources/Core"
+    ]
+  },
+  {
+    "Name": "CoreTests",
+    "Dirs": [
+      "Tests/CoreTests"
+    ]
+  }
+]

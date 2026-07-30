@@ -1,0 +1,6 @@
+lint:
+    go:
+        allowed:
+            - cmd -> internal/analyzer
+            - internal/analyzer -> internal/detect
+        pending: []

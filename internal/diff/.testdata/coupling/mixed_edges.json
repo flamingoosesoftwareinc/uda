@@ -1,0 +1,41 @@
+[
+  {
+    "Package": "pkg/cache",
+    "DiffType": 1,
+    "Symbols": [
+      {
+        "Name": "cache.Get",
+        "DiffType": 1,
+        "PrevCount": 0,
+        "CurrCount": 1,
+        "Positions": null
+      }
+    ]
+  },
+  {
+    "Package": "pkg/db",
+    "DiffType": 0,
+    "Symbols": [
+      {
+        "Name": "db.Query",
+        "DiffType": 0,
+        "PrevCount": 2,
+        "CurrCount": 3,
+        "Positions": null
+      }
+    ]
+  },
+  {
+    "Package": "pkg/legacy",
+    "DiffType": 2,
+    "Symbols": [
+      {
+        "Name": "legacy.Old",
+        "DiffType": 2,
+        "PrevCount": 1,
+        "CurrCount": 0,
+        "Positions": null
+      }
+    ]
+  }
+]

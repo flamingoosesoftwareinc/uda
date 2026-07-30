@@ -1,0 +1,79 @@
+[
+  {
+    "language": "Go",
+    "metrics": [
+      {
+        "package": "example.com/project/main",
+        "inward": {},
+        "outward": {
+          "example.com/project/cmd": {
+            "cmd.Execute": {
+              "count": 1
+            }
+          }
+        }
+      },
+      {
+        "package": "example.com/project/cmd",
+        "inward": {
+          "example.com/project/main": {
+            "cmd.Execute": {
+              "count": 1
+            }
+          }
+        },
+        "outward": {
+          "example.com/project/pkg/bar": {
+            "bar.DoBar": {
+              "count": 1
+            }
+          },
+          "example.com/project/pkg/foo": {
+            "foo.DoFoo": {
+              "count": 2
+            }
+          },
+          "fmt": {
+            "fmt.Println": {
+              "count": 3
+            }
+          }
+        }
+      },
+      {
+        "package": "example.com/project/pkg/foo",
+        "inward": {
+          "example.com/project/cmd": {
+            "foo.DoFoo": {
+              "count": 2
+            }
+          }
+        },
+        "outward": {
+          "fmt": {
+            "fmt.Sprintf": {
+              "count": 1
+            }
+          }
+        }
+      },
+      {
+        "package": "example.com/project/pkg/bar",
+        "inward": {
+          "example.com/project/cmd": {
+            "bar.DoBar": {
+              "count": 1
+            }
+          }
+        },
+        "outward": {
+          "fmt": {
+            "fmt.Println": {
+              "count": 1
+            }
+          }
+        }
+      }
+    ]
+  }
+]

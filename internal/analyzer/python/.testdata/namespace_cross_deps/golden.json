@@ -1,0 +1,72 @@
+[
+  {
+    "package": "plugins.auth.handler",
+    "inward": {},
+    "outward": {
+      "plugins.db": {
+        "plugins.db.connection": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "plugins/auth/handler.py",
+              "line": 6,
+              "col_start": 12,
+              "col_end": 22
+            }
+          ]
+        }
+      },
+      "plugins.utils": {
+        "plugins.utils.helpers": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "plugins/auth/handler.py",
+              "line": 7,
+              "col_start": 5,
+              "col_end": 12
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "plugins.db.connection",
+    "inward": {},
+    "outward": {
+      "sqlite3": {
+        "sqlite3": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "plugins/db/connection.py",
+              "line": 5,
+              "col_start": 12,
+              "col_end": 19
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "plugins.utils.helpers",
+    "inward": {},
+    "outward": {
+      "plugins.db": {
+        "plugins.db.connection": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "plugins/utils/helpers.py",
+              "line": 9,
+              "col_start": 12,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    }
+  }
+]

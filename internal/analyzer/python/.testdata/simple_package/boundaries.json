@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "mypackage",
+    "Dirs": [
+      "mypackage"
+    ]
+  },
+  {
+    "Name": "mypackage.config",
+    "Dirs": [
+      "mypackage"
+    ]
+  },
+  {
+    "Name": "mypackage.handler",
+    "Dirs": [
+      "mypackage"
+    ]
+  }
+]

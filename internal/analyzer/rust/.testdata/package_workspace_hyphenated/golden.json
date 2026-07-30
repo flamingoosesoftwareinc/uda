@@ -1,0 +1,156 @@
+[
+  {
+    "package": "casesplit",
+    "inward": {
+      "iso-cli": {
+        "casesplit::tokens::Token": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "iso-cli/src/main.rs",
+              "line": 13,
+              "col_start": 17,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "iso-model": {
+        "casesplit::tokens::Token": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "iso-model/src/model.rs",
+              "line": 4,
+              "col_start": 16,
+              "col_end": 21
+            },
+            {
+              "file": "iso-model/src/model.rs",
+              "line": 9,
+              "col_start": 25,
+              "col_end": 35
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  },
+  {
+    "package": "iso-cli",
+    "inward": {},
+    "outward": {
+      "casesplit": {
+        "casesplit::tokens::Token": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "iso-cli/src/main.rs",
+              "line": 13,
+              "col_start": 17,
+              "col_end": 27
+            }
+          ]
+        }
+      },
+      "iso-model": {
+        "iso_model::model::Mirror": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "iso-cli/src/main.rs",
+              "line": 12,
+              "col_start": 18,
+              "col_end": 29
+            }
+          ]
+        }
+      },
+      "renamed-lib": {
+        "renamed::report::Report": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "iso-cli/src/main.rs",
+              "line": 14,
+              "col_start": 18,
+              "col_end": 29
+            }
+          ]
+        }
+      },
+      "serde": {
+        "serde::Deserialize": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "iso-cli/src/main.rs",
+              "line": 6,
+              "col_start": 9,
+              "col_end": 22
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "iso-model",
+    "inward": {
+      "iso-cli": {
+        "iso_model::model::Mirror": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "iso-cli/src/main.rs",
+              "line": 12,
+              "col_start": 18,
+              "col_end": 29
+            }
+          ]
+        }
+      }
+    },
+    "outward": {
+      "casesplit": {
+        "casesplit::tokens::Token": {
+          "count": 2,
+          "positions": [
+            {
+              "file": "iso-model/src/model.rs",
+              "line": 4,
+              "col_start": 16,
+              "col_end": 21
+            },
+            {
+              "file": "iso-model/src/model.rs",
+              "line": 9,
+              "col_start": 25,
+              "col_end": 35
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "package": "renamed-lib",
+    "inward": {
+      "iso-cli": {
+        "renamed::report::Report": {
+          "count": 1,
+          "positions": [
+            {
+              "file": "iso-cli/src/main.rs",
+              "line": 14,
+              "col_start": 18,
+              "col_end": 29
+            }
+          ]
+        }
+      }
+    },
+    "outward": {}
+  }
+]
